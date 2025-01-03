@@ -16,7 +16,7 @@
   - Regression
   - Neural Networks
 
-### 2. Unsupervised Learning 🧩
+### 2. [Unsupervised Learning](unsupervised_learning/unsupervised_learning.md) 🧩
 - Discovers patterns in unlabeled data
 - Key applications:
   - Clustering
