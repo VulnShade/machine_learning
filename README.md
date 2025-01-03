@@ -4,7 +4,7 @@
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤-red.svg)](/)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-## 📚 Table of Contents
+## 📚 Study Notes
 
 1. [Machine Learning Overview](machine_learning.md)
    - What is Machine Learning?
@@ -13,6 +13,12 @@
 2. [Supervised Learning](supervised_learning/supervised_learning.md)
    - Key Concepts
    - Common Applications
+
+## 📖 Additional Resources
+Check out our curated list of [learning resources](resources.md) including:
+- Online courses
+- Recommended textbooks
+- Reference materials
 
 ## 🎯 Purpose
 
