@@ -5,7 +5,7 @@
 > Essential concepts and tools for machine learning
 
 ## 🐍 Python for ML
-1. [NumPy arrays](python\numpy\numpy_arrays.ipynb)
+1. [NumPy arrays](python/numpy/numpy_arrays.ipynb)
 
 ## 📐 Mathematics
 1. Linear Algebra
