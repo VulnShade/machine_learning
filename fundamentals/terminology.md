@@ -7,17 +7,20 @@
 ## 🔍 Core Terms
 
 ### Training Set 📊
-> Data used to teach the model patterns and relationships
+> Collection of labeled examples used to train the model
 
-- Collection of labeled examples
-- Input features (x) paired with correct outputs (y)
-- x - input variable
-- y - output variable
-- m - number of training examples
-- (x,y) - single training example
-- (x<sup>(i)</sup>, y<sup>(i)</sup>) = i<sup>th</sup> training example. i is row in training set
+**Basic Elements:**
+- `x` - Input variable (feature)
+- `y` - Output/target variable
+- `m` - Number of training examples
+- `ŷ` - Predicted output (y-hat)
 
+**Training Examples:**
+- `(x,y)` - Single training example
+- `(x⁽ⁱ⁾,y⁽ⁱ⁾)` - i-th training example (row i in dataset)
 
+**Model:**
+- Function that maps inputs (x) to predictions (ŷ)
 
 ---
 
