@@ -22,6 +22,11 @@
 
 <img src="images/reg_ex.png" alt="regression example" width="500"/>
 
+#### Types
+- [Linear Regression](linear_regression/README.md)
+  - Simple linear relationships
+  - Continuous output values
+
 #### Use Cases:
 - Housing price prediction
 - Temperature forecasting

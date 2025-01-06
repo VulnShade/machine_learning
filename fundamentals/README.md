@@ -4,10 +4,15 @@
 
 > Essential concepts and tools for machine learning
 
+## 📚 Key Terminology
+- [ML Terminology](terminology.md)
+  - Core concepts and definitions
+  - Essential vocabulary for ML
+  - Common terms and usage
+
 ## 🐍 Python for ML
 1. [NumPy arrays](python/numpy/numpy_arrays.ipynb)
 2. [Solving Linear Systems (2 Variables)](python/numpy/solving_linear_systems_2_variables.ipynb)
-
 
 ## 📐 Mathematics
 1. Linear Algebra

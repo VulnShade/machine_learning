@@ -10,6 +10,7 @@
    - Python for ML
    - Mathematics Essentials
    - Tools & Libraries
+   - Terminology
 2. [Machine Learning Overview](machine_learning.md)
    - What is Machine Learning?
    - Types of Machine Learning Algorithms
