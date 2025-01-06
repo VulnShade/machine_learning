@@ -21,6 +21,7 @@
 
 **Model:**
 - 𝑓 - Function that maps inputs (x) to predictions (ŷ)
+- `w,b` - model parameters (aka: coefficients, or weights)
 
 ---
 
