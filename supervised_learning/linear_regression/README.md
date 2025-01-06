@@ -18,5 +18,19 @@
 - Sales forecasting
 - Consumer behavior analysis
 
+## 📘 Implementation Steps
+### Single Variable Linear Regression:
+#### 1. [Model Representation](notebooks/solving_linear_systems_2_variables.ipynb)
+- Understanding the function
+- Linear model structure
+- Input/output relationship
+
+## Representing 𝑓:
+f<sub>w,b</sub>(x) = wx + b
+- Determines output `ŷ`
+
+<br>
+
 ---
+
 _Learning the relationships between variables to make predictions_

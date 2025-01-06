@@ -13,14 +13,14 @@
 - `x` - Input variable (feature)
 - `y` - Output/target variable
 - `m` - Number of training examples
-- `ŷ` - Predicted output (y-hat)
+- `ŷ` - Predicted output (y-hat). Estimated y.
 
 **Training Examples:**
 - `(x,y)` - Single training example
 - `(x⁽ⁱ⁾,y⁽ⁱ⁾)` - i-th training example (row i in dataset)
 
 **Model:**
-- Function that maps inputs (x) to predictions (ŷ)
+- 𝑓 - Function that maps inputs (x) to predictions (ŷ)
 
 ---
 
