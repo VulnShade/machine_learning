@@ -29,7 +29,7 @@ f<sub>w,b</sub>(x) = wx + b
 - `w` - Slope of line
 - `b` - y-intercept
 
-#### 2. [Cost Function](single_variate\2_cost_function.ipynb)
+#### 2. [Cost Function](single_variate/3_gradient_decent.ipynb)
 - <b>Squared Error Cost function</b>: Measures accuracy of predictions
 ```math
 J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} (ŷ⁽ⁱ⁾- y⁽ⁱ⁾)²
