@@ -45,14 +45,23 @@ J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} (ŷ⁽ⁱ⁾- y⁽ⁱ⁾)²
 
 <br>
 
-Formula:
-```math
-w = w -\alpha\;\;\frac{d}{dw}J(w,b)
-```
+<b>Formula</b>:
 
+tmp_w = w - $\alpha\;\frac{d}{dw}J(w,b)$ <br>
+tmp_b = b - $\alpha\;\frac{d}{db}J(w,b)$ <br>
+w = tmp_w <br>
+b = tmp_b
+
+<br>
+
+### Derivative of cost function with respect to w and to b: <br> <br>
+ ### $\frac{d}{dw}J(w,b)$ = $\frac{1}{m}\sum\limits_{i=1}^{m}(\mathcal{f}_{w,b}(x^{(i)}-y^{(i)})x^{(i)})$ <br> <br>
+ ### $\frac{d}{db}J(w,b)$ = $\frac{1}{m}\sum\limits_{i=1}^{m}(\mathcal{f}_{w,b}(x^{(i)}-y^{(i)}))$ <br> <br> 
 - `α` = learning rate
-- <span style="background-color:rgb(51, 49, 49); padding: 2px; border-radius: 3px; font-family: monospace;">$\frac{d}{dw}J(w,b)$</span> = derivative of cost function
+  - if too small - greadient descent will be very slow
+  - if too large - can overshoot the minimum and fail to converge (diverge)
 
+`Must simultaneously update w and b `
 
 <br>
 
