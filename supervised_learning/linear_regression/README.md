@@ -54,7 +54,7 @@ b = tmp_b
 
 <br>
 
-### Derivative of cost function with respect to w and to b: <br> <br>
+#### Derivative of cost function with respect to w and to b: <br> <br>
  ### $\frac{d}{dw}J(w,b)$ = $\frac{1}{m}\sum\limits_{i=1}^{m}(\mathcal{f}_{w,b}(x^{(i)}-y^{(i)})x^{(i)})$ <br> <br>
  ### $\frac{d}{db}J(w,b)$ = $\frac{1}{m}\sum\limits_{i=1}^{m}(\mathcal{f}_{w,b}(x^{(i)}-y^{(i)}))$ <br> <br> 
 - `α` = learning rate
@@ -63,6 +63,28 @@ b = tmp_b
 
 `Must simultaneously update w and b `
 
+<br>
+
+### Multiple Linear Regression:
+<img src="images/multi_lin_reg_ex.png" alt="mulitple 
+linear regression example" width="500"/>
+- $x_j$ = $j^{th}$ feature
+- n = number of features
+- $\vec{x}^{(i)}$ = features of $i^{th}$ training example
+- $x_{j}^{(i)}$ = value of feature j in $i^{th}$ training example
+
+#### 1. [Model Representation]()
+### $\mathcal{f}_{w,b}(x) = w_1x_1 + w_2x_2 + w_3x_3 ... w_jx_j + b = \vec{w} \cdot \vec{x} + b$
+
+
+Parameters:
+- $\vec{w}$ = $[w_1\ w_2\ w_3\ ...w_j]$
+- b
+
+In numpy:
+```python
+f = np.dot(w,x) + b
+```
 <br>
 
 ---
