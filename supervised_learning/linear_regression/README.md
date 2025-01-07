@@ -21,7 +21,7 @@
 ## 📘 Implementation Steps
 ### Single Variable Linear Regression:
 
-#### 1. [Model Representation](single_variate\1_model_representation.ipynb)
+#### 1. [Model Representation](single_variate/1_model_representation.ipynb)
 #### Representing 𝑓:
 
 f<sub>w,b</sub>(x) = wx + b
@@ -29,7 +29,7 @@ f<sub>w,b</sub>(x) = wx + b
 - `w` - Slope of line
 - `b` - y-intercept
 
-#### 2. [Cost Function](single_variate/3_gradient_decent.ipynb)
+#### 2. [Cost Function](single_variate/2_cost_function.ipynb)
 - <b>Squared Error Cost function</b>: Measures accuracy of predictions
 ```math
 J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} (ŷ⁽ⁱ⁾- y⁽ⁱ⁾)²
@@ -39,7 +39,7 @@ J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} (ŷ⁽ⁱ⁾- y⁽ⁱ⁾)²
   - `y⁽ⁱ⁾` = actual value
 - Goal: Minimize J(w,b)
 
-#### 3. [Gradient Decent](single_variate\3_gradient_decent.ipynb)
+#### 3. [Gradient Decent](single_variate/3_gradient_decent.ipynb)
 - Have some cost function <b>J(w,b)</b>, want <b>$\min\limits_{w, b}$ J(w,b)</b>
 - Takes down path of steepest decent to local minima
 
