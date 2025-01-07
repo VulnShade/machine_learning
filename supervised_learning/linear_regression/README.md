@@ -39,6 +39,21 @@ J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} (ŷ⁽ⁱ⁾- y⁽ⁱ⁾)²
   - `y⁽ⁱ⁾` = actual value
 - Goal: Minimize J(w,b)
 
+#### 3. [Gradient Decent](single_variate\3_gradient_decent.ipynb)
+- Have some cost function <b>J(w,b)</b>, want <b>$\min\limits_{w, b}$ J(w,b)</b>
+- Takes down path of steepest decent to local minima
+
+<br>
+
+Formula:
+```math
+w = w -\alpha\;\;\frac{d}{dw}J(w,b)
+```
+
+- `α` = learning rate
+- <span style="background-color:rgb(51, 49, 49); padding: 2px; border-radius: 3px; font-family: monospace;">$\frac{d}{dw}J(w,b)$</span> = derivative of cost function
+
+
 <br>
 
 ---
