@@ -86,7 +86,16 @@ In numpy:
 f = np.dot(w,x) + b
 ```
 
-#### 1. [Gradient Decent]()
+#### 2. [Cost Function]()
+### $J(\vec{w},b) = \frac{1}{2m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)²$
+
+#### 3. [Gradient Decent]()
+### $w_1 = w_1 - \alpha\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)x_1^{(i)}$
+. . .
+### $w_n = w_n - \alpha\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)x_m^{(i)}$
+
+### $b = b - \alpha\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)$
+
 `w = np.array([0.5, 1.3, ... 3.4])` <br>
 `d = np.array([0.3, 0.2, ... 0.4])` - derivatives <br>
 compute $w_j = w_j - 0.1d_j$ for j=1....n
@@ -95,6 +104,13 @@ compute $w_j = w_j - 0.1d_j$ for j=1....n
 # Vectorized in numpy
 w = w - 0.1 * d
 ```
+<br>
+
+** `NORMAL EQUATION` **
+- Alternative to gradient decent
+- Only for linear regression
+- Some libraries may use on backend
+- Slow > 10k features
 
 
 <br>

@@ -16,6 +16,14 @@ two_dim_arr = np.array([[1,2,3],         # 2D array:
                         [4,5,6]])         # [[1 2 3]
                                          #  [4 5 6]]
 lin_spaced_arr = np.linspace(0, 100, 5)  # Evenly spaced values
+
+# Indexing
+a[0]        # Access row 0 
+a[:,0]      # Access column 0 
+
+# Reshape
+a.reshape(-1, 2)        # reshape to 2 columns
+reshape(2, -1)          # reshape to 2 rows
 ```
 
 ### Array Operations
@@ -35,6 +43,10 @@ horz_stack = np.hstack((a1, a2))  # Horizontal stacking
 
 ### Linear Algebra Operations
 ```python
+# Single vector operations
+np.sum(a)                   # sum of vector elements
+np.mean(a)                  # mean of vecotr
+
 # System solving and matrix operations
 np.linalg.solve(A, b)         # Solve linear system Ax = b
 np.linalg.det(A)             # Calculate determinant
