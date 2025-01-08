@@ -85,6 +85,18 @@ In numpy:
 ```python
 f = np.dot(w,x) + b
 ```
+
+#### 1. [Gradient Decent]()
+`w = np.array([0.5, 1.3, ... 3.4])` <br>
+`d = np.array([0.3, 0.2, ... 0.4])` - derivatives <br>
+compute $w_j = w_j - 0.1d_j$ for j=1....n
+
+```python
+# Vectorized in numpy
+w = w - 0.1 * d
+```
+
+
 <br>
 
 ---
