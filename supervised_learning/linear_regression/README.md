@@ -9,6 +9,7 @@
 - [Multiple Linear Regression](#multiple-linear-regression)
 - [Feature Scaling](#feature-scaling)
 - [Checking Gradient Descent Convergence](#checking-gradient-decent-for-convergence)
+- [Choosing Learning Rate](#choosing-learning-rate)
 
 ## 📝 Key Concepts
 - Model trained on labeled input/output pairs
@@ -155,6 +156,23 @@ linear regression example" width="500"/>
 - Automatic convergence test: <br>
 $ let \ \epsilon = 10^{-3} \ or \ 0.001 $ <br>
 If $J(\vec{w},b)$ decreases by $\leq \epsilon$ in 1 iteration declare convergence
+
+<br>
+
+## [Choosing learning rate]()
+![gradient decent issue graph](images/adjust_learning_rate.png)
+- Set learning rate to very smal number:
+  - if cost does not go down on each iter (for debugging), most likely bug in code 
+
+<br>
+
+![finding the best learning rate](images/find_learning_rate.png)
+
+### To find optimal rate:
+1. Start with small learning rate
+2. Increase by 3x each time
+3. Identify values too small and too large
+4. Pick slightly smaller than largest that converges
 
 <br>
 
