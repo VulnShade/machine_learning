@@ -115,6 +115,22 @@ w = w - 0.1 * d
 
 <br>
 
+## [Feature Scaling](feature_scaling/README.md)
+
+<img src="images/feature_scaling_ex.png" alt="mulitple 
+linear regression example" width="500"/>
+
+- If feature differ greatly (i.e. Feature 1 in 1s, Feature 2 in 1000s)
+  - Plot axis will be skewed
+  - Cause contour plot of cost function to be narrow
+  - Slows gradient decent
+- Scale features to be similiar values
+  - Creates more circular contour plot
+  - More direct path for gradient decent
+
+
+
+<br>
 ---
 
 _Learning the relationships between variables to make predictions_
