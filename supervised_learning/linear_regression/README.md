@@ -7,9 +7,11 @@
 ## 📋 Contents
 - [Single Variable Linear Regression](#single-variable-linear-regression)
 - [Multiple Linear Regression](#multiple-linear-regression)
+- [Feature Engineering](#feature-engineering)
 - [Feature Scaling](#feature-scaling)
 - [Checking Gradient Descent Convergence](#checking-gradient-decent-for-convergence)
 - [Choosing Learning Rate](#choosing-learning-rate)
+- [Implementation with Scikit-learn](scikit-learn/linear_regression_sklearn.ipynb)
 
 ## 📝 Key Concepts
 - Model trained on labeled input/output pairs
