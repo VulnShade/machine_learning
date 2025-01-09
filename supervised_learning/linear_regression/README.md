@@ -138,7 +138,7 @@ linear regression example" width="500"/>
 
 <br>
 
-## [Checking gradient decent for convergence]()
+## [Checking gradient decent for convergence](feature_scaling/Feature_Scaling_and_Learning_Rate.ipynb)
 <img src="images/gd_convergence.png" alt="mulitple 
 linear regression example" width="500"/>
 
@@ -159,7 +159,7 @@ If $J(\vec{w},b)$ decreases by $\leq \epsilon$ in 1 iteration declare convergenc
 
 <br>
 
-## [Choosing learning rate]()
+## [Choosing learning rate](feature_scaling/Feature_Scaling_and_Learning_Rate.ipynb)
 ![gradient decent issue graph](images/adjust_learning_rate.png)
 - Set learning rate to very smal number:
   - if cost does not go down on each iter (for debugging), most likely bug in code 
