@@ -176,6 +176,21 @@ If $J(\vec{w},b)$ decreases by $\leq \epsilon$ in 1 iteration declare convergenc
 
 <br>
 
+## [Feature Engineering]()
+
+![alt text](images/feature_engineering_ex.png)
+
+### Methodology:
+- Use intuition to design new features
+- Transform or combine original features
+
+### Example:
+1. Find that area of property may contribute to cost of house more than frontage or depth
+2. Create new feature by multiplying frontage x depth
+
+
+<br>
+
 ---
 
 _Learning the relationships between variables to make predictions_

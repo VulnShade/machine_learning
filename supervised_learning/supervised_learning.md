@@ -27,6 +27,9 @@
   - Simple linear relationships
   - Continuous output values
 
+- [Polynomial Regression](polynomial_regression/README.md)
+  - Use more complex function to better fit data
+
 #### Use Cases:
 - Housing price prediction
 - Temperature forecasting
