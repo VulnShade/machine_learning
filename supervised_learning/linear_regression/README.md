@@ -4,6 +4,12 @@
 
 > Predicting continuous values using linear relationships
 
+## 📋 Contents
+- [Single Variable Linear Regression](#single-variable-linear-regression)
+- [Multiple Linear Regression](#multiple-linear-regression)
+- [Feature Scaling](#feature-scaling)
+- [Checking Gradient Descent Convergence](#checking-gradient-decent-for-convergence)
+
 ## 📝 Key Concepts
 - Model trained on labeled input/output pairs
 - Fits a straight line through training data
@@ -129,8 +135,29 @@ linear regression example" width="500"/>
   - More direct path for gradient decent
 
 
+<br>
+
+## [Checking gradient decent for convergence]()
+<img src="images/gd_convergence.png" alt="mulitple 
+linear regression example" width="500"/>
+
+#### If working properly:
+- Gradient decent should decrease after each iteration
+
+#### If J increases:
+- Alpha chosen poorly
+- Bug in code
+
+#### # Iterations needed to converge varies
+
+### Checking Convergence:
+- Create learning curve graph and view
+- Automatic convergence test: <br>
+$ let \ \epsilon = 10^{-3} \ or \ 0.001 $ <br>
+If $J(\vec{w},b)$ decreases by $\leq \epsilon$ in 1 iteration declare convergence
 
 <br>
+
 ---
 
 _Learning the relationships between variables to make predictions_
