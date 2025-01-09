@@ -73,7 +73,7 @@ linear regression example" width="500"/>
 - $\vec{x}^{(i)}$ = features of $i^{th}$ training example
 - $x_{j}^{(i)}$ = value of feature j in $i^{th}$ training example
 
-#### 1. [Model Representation]()
+#### 1. [Model Representation](multiple_linear_regression/multiple_lin_reg.ipynb)
 ### $\mathcal{f}_{w,b}(x) = w_1x_1 + w_2x_2 + w_3x_3 ... w_jx_j + b = \vec{w} \cdot \vec{x} + b$
 
 
@@ -86,10 +86,10 @@ In numpy:
 f = np.dot(w,x) + b
 ```
 
-#### 2. [Cost Function]()
+#### 2. [Cost Function](multiple_linear_regression/multiple_lin_reg.ipynb)
 ### $J(\vec{w},b) = \frac{1}{2m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)²$
 
-#### 3. [Gradient Decent]()
+#### 3. [Gradient Decent](multiple_linear_regression/multiple_lin_reg.ipynb)
 ### $w_1 = w_1 - \alpha\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)x_1^{(i)}$
 . . .
 ### $w_n = w_n - \alpha\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)x_m^{(i)}$
