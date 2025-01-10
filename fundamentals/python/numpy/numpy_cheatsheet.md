@@ -45,7 +45,8 @@ horz_stack = np.hstack((a1, a2))  # Horizontal stacking
 ```python
 # Single vector operations
 np.sum(a)                   # sum of vector elements
-np.mean(a)                  # mean of vecotr
+np.mean(a)                  # mean of vector
+np.linalg.norm(v)           # norm of a vector (length)
 
 # System solving and matrix operations
 np.linalg.solve(A, b)         # Solve linear system Ax = b

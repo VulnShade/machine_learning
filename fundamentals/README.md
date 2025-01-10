@@ -19,8 +19,8 @@
 1. [Solving Linear Systems (2 Variables)](python/numpy/solving_linear_systems_2_variables.ipynb)
 2. [Solving Linear Systems (3 Variables)](python/numpy/solving_linear_systems_3_variables.ipynb)
 
-## 📐 Mathematics
-1. Linear Algebra
+## 📐 [Mathematics](math/README.md)
+1. [Linear Algebra](math/linear_algebra/linear_algebra.md)
    - Systems of Linear Equations
    - Matrices and Vectors
    - Linear Transformations
