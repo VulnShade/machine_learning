@@ -4,6 +4,23 @@
 
 > Quick reference for essential linear algebra concepts
 
+## 📋 Contents
+- [Determinants](#-determinants)
+  - [2x2 Matrix](#2x2-matrix)
+  - [3x3 Matrix](#3x3-matrix)
+  - [Properties](#properties)
+- [Solving Systems of Equations](#-solving-systems-of-equations)
+- [Matrix Rank](#-matrix-rank)
+- [Vectors](#-vectors)
+  - [Basic Operations](#basic-operations)
+  - [Dot Product](#dot-product)
+- [Linear Transformations](#linear-transformations)
+  - [Matrix Transformations](#matrices-as-linear-transformations)
+  - [Finding Transformation Matrix](#linear-transformation-to-matrix)
+  - [Combining Transformations](#combining-linear-transformations)
+- [Identity Matrix](#the-identity-matrix)
+- [Matrix Inverse](#matrix-inverse)
+
 ## 📊 Determinants
 
 ### 2x2 Matrix
@@ -205,6 +222,77 @@ $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2$
 
 <img src="images/matrix_multiplication.png" alt="matrix mulitiplication"  width=500>
 
+<br>
+
+## The identity matrix
+- Matrix if multiplied by any other matrix gives the same matrix
+
+```math
+\begin{bmatrix}
+1 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 1
+\end{bmatrix}
+
+\begin{bmatrix}
+a\\
+b\\
+c\\
+d\\
+e\\
+\end{bmatrix}
+
+= 
+
+\begin{bmatrix}
+a\\
+b\\
+c\\
+d\\
+e\\
+\end{bmatrix}
+```
+<br>
+
+## Matrix inverse
+
+### `Matrices with 0 determinant have no inverse`
+
+#### Product of a matrix and its invere = identity matrix
+- Determinant of inverse with be inverse of the determinant of the matrix <br>
+<br>
+
+Example: 
+
+Det of $\begin{bmatrix}
+3 & 1 \\
+1 & 2
+\end{bmatrix}$ = 5
+
+Det of inverse $\begin{bmatrix}
+0.4 & -0.2 \\
+-0.2 & 0.6
+\end{bmatrix}$ = $5^{-1}$ = $\frac{1}{5}$
+
+<br>
+
+Because $0^{-1} = ???$, Matrices with Det of 0 have no inverse
+
+<br>
+
+<img src="images/inverse_matrix.png" alt="inverse matrix" width=750>
+
+#### To Find:
+1. Create system of linear equations from the matrix multiplication
+2. Solve as any other system of linear equations
+
+<br>
+
+Example:
+
+<img src="images/finding_inverse.png" alt="inverse matrix" width=750>
 
 <br>
 
