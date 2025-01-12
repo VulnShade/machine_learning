@@ -83,5 +83,104 @@ $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2$
 - $\vec{a} \cdot \vec{a} = \|\vec{a}\|^2$
 - Used in projections and ML algorithms
 
+<br>
+
+## Linear Transformations
+
+### Matrices as linear transformations
+<img src="images/linear_transformations.png" width="700">
+
+
+
+#### Calculating transformation
+<br>
+
+```math
+\begin{bmatrix}
+3 & 1 \\
+1 & 2
+\end{bmatrix}
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 \cdot 1 + 1 \cdot 0 \\
+1 \cdot 1 + 2 \cdot 0
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 \\
+1
+\end{bmatrix}
+```
+
+<br>
+
+### Linear transformation to matrix
+<img src="images/transformation_to_matrix.png" width="700">
+
+#### Given basis find transformation matrix
+(0,0) → (0,0) <br>
+(1,0) → (3,-1) <br>
+(0,1) → (2,3) <br>
+(1,1) → (5,2) 
+
+<br>
+
+```math
+\begin{bmatrix}
+? & ? \\
+? & ?
+\end{bmatrix}
+\begin{bmatrix}
+0 \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+2 \\
+3
+\end{bmatrix}
+\\[2em] 
+
+\begin{bmatrix}
+? & ? \\
+? & ?
+\end{bmatrix}
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 \\
+-1
+\end{bmatrix}
+
+\\[2em]
+
+\begin{bmatrix}
+? & ? \\
+? & ?
+\end{bmatrix}
+
+=
+
+\begin{bmatrix}
+3 & 2 \\
+-1 & 3
+\end{bmatrix}
+
+```
+
+### Combining linear transformations
+![combining linear transformations](images/combining_transformations.png)
+<br>
+
+
+<br>
+
 ---
 💡 _Understanding these concepts is crucial for machine learning algorithms_
