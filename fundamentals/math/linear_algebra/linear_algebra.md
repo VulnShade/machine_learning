@@ -177,7 +177,33 @@ $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2$
 
 ### Combining linear transformations
 ![combining linear transformations](images/combining_transformations.png)
+
+#### Look at basis vectors:
+(1,0) → (5,2) <br>
+(0,1) → (0,4)
 <br>
+
+```math
+\begin{bmatrix}
+? & ? \\
+? & ?
+\end{bmatrix}
+
+=
+
+\begin{bmatrix}
+5 & 0 \\
+2 & 4
+\end{bmatrix}
+```
+
+<br>
+
+#### Using matrix multiplication:
+
+<br>
+
+<img src="images/matrix_multiplication.png" alt="matrix mulitiplication"  width=500>
 
 
 <br>
