@@ -159,6 +159,17 @@ given vector $\begin{bmatrix}
 
 <br>
 
+use vectors $ \begin{bmatrix}
+1 \\ 0
+\end{bmatrix} ,  \begin{bmatrix}
+0 \\ 1
+\end{bmatrix} $ as these form identity matrix $ \begin{bmatrix}
+1 & 0 \\
+0 & 1 
+\end{bmatrix} $
+
+<br>
+
 ```math
 \begin{bmatrix}
 ? & ? \\
@@ -234,6 +245,13 @@ given vector $\begin{bmatrix}
 <br>
 
 <img src="images/matrix_multiplication.png" alt="matrix mulitiplication"  width=500>
+
+<br>
+
+- A X B - Matrix A must have same # columns as # B rows
+- Products matrix with A rows X B columns 
+    - ex. 3 x 3 $\cdot$ 3 x 2 = 3 x 2 matrix
+
 
 <br>
 
