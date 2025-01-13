@@ -23,11 +23,11 @@
 <img src="images/reg_ex.png" alt="regression example" width="500"/>
 
 #### Types
-- [Linear Regression](linear_regression/README.md)
+- [Linear Regression](regression/linear_regression/README.md)
   - Simple linear relationships
   - Continuous output values
 
-- [Polynomial Regression](polynomial_regression/README.md)
+- [Polynomial Regression](regression/polynomial_regression/README.md)
   - Use more complex function to better fit data
 
 #### Use Cases:
@@ -39,6 +39,9 @@
 > Predicts discrete categories or classes
 
 <img src="images/classification_ex.png" alt="classification example" width="500"/>
+
+#### Types
+- [Logistic Regression](classification/logistic_regression/README.md)
 
 #### Use Cases:
 - Email spam detection
