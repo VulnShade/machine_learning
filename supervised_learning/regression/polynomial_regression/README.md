@@ -1,6 +1,6 @@
 # 📈 Polynomial Regression
 
-[← Back to Main Page](../../README.md) | [← Back to Supervised Learning](../supervised_learning.md)
+[← Back to Main Page](../../../README.md) | [← Back to Supervised Learning](../../supervised_learning.md)
 
 > Extending linear regression to fit non-linear relationships
 

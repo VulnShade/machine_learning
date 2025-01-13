@@ -1,6 +1,6 @@
 # 📊 Feature Scaling
 
-[← Back to Main Page](../../../README.md) | [← Back to Linear Regression](../README.md)
+[← Back to Main Page](../../../../README.md) | [← Back to Linear Regression](../README.md)
 
 ## 🎯 Method 1: Divide by Maximum Value
 

@@ -1,6 +1,6 @@
 # 📈 Linear Regression
 
-[← Back to Main Page](../../README.md) | [← Back to Supervised Learning](../supervised_learning.md)
+[← Back to Main Page](../../../README.md) | [← Back to Supervised Learning](../../supervised_learning.md)
 
 > Predicting continuous values using linear relationships
 
