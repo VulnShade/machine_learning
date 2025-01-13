@@ -89,7 +89,10 @@ Continue until solved...
 ## 🎯 Vectors
 
 ### Basic Operations
-- Addition: $\vec{a} + \vec{b} = (a_1+b_1, a_2+b_2)$
+- Addition: $\vec{a} + \vec{b} = (a_1+b_1, a_2+b_2)$ <br>
+![alt text](images/vectors_addition.png)
+- Subraction (distance between vectors): $\vec{a} - \vec{b} = (a_1-b_1, a_2-b_2)$ <br>
+![alt text](images/subtracting_vectors.png)
 - Scalar multiplication: $c\vec{a} = (ca_1, ca_2)$
 
 ### Dot Product
@@ -99,6 +102,16 @@ $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2$
 - $\vec{a} \cdot \vec{b} = 0$ → vectors are orthogonal
 - $\vec{a} \cdot \vec{a} = \|\vec{a}\|^2$
 - Used in projections and ML algorithms
+
+
+### Norm of vector
+- length of a vector
+
+given vector $\begin{bmatrix}
+3 \\
+1
+\end{bmatrix}$ norm = $\sqrt{3^{2} + 1^{2}}$
+
 
 <br>
 
