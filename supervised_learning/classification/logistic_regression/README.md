@@ -89,5 +89,26 @@ $L(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}), \vec{y}^{(i)}) = \begin{cases}
 > Higher loss when prediction is closer to 1
 <img src="images/loss_y0.png" alt="loss function when y=0" width="750">
 
+### 💡 Simplified Implementation Form
+> Single equation that works for both y=0 and y=1 cases
+
+$$loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), y^{(i)}) = -y^{(i)} \log(f_{\mathbf{w},b}(\mathbf{x}^{(i)})) - (1 - y^{(i)}) \log(1 - f_{\mathbf{w},b}(\mathbf{x}^{(i)}))$$
+
+### Case Analysis
+
+#### When y = 0
+> Right term remains, left term becomes zero
+$$\begin{align}
+loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), 0) &= -(0) \log(f_{\mathbf{w},b}(\mathbf{x}^{(i)})) - (1) \log(1 - f_{\mathbf{w},b}(\mathbf{x}^{(i)})) \\
+&= -\log(1 - f_{\mathbf{w},b}(\mathbf{x}^{(i)}))
+\end{align}$$
+
+#### When y = 1
+> Left term remains, right term becomes zero
+$$\begin{align}
+loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), 1) &= -(1) \log(f_{\mathbf{w},b}(\mathbf{x}^{(i)})) - (0) \log(1 - f_{\mathbf{w},b}(\mathbf{x}^{(i)})) \\
+&= -\log(f_{\mathbf{w},b}(\mathbf{x}^{(i)}))
+\end{align}$$
+
 ---
 💡 _Logistic regression is fundamental for binary classification problems_
