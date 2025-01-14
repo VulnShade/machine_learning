@@ -70,10 +70,10 @@ $\mathcal{f}_{\vec{w},x}(\vec{x}) = g(\underbrace{\vec{w} \cdot \vec{x} + b}_{z}
 
 <br>
 
-## 📉 [Cost Function](loss_function/loss_function.ipynb)
+## 📉 [Cost Function](cost_function/cost_function.ipynb)
 > Measures how well the model's predictions match the actual values
 
-### Loss Function Definition
+### [Loss Function](cost_function/loss_function.ipynb) Definition
 $L(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}), \vec{y}^{(i)}) = \begin{cases}
 -log({f}_{\vec{w},b}(\vec{x}^{(i)})) & \text{if } y^{(i)} = 1 \\
 -log(1 - {f}_{\vec{w},b}(\vec{x}^{(i)})) & \text{if } y^{(i)} = 0
@@ -109,6 +109,10 @@ $$\begin{align}
 loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), 1) &= -(1) \log(f_{\mathbf{w},b}(\mathbf{x}^{(i)})) - (0) \log(1 - f_{\mathbf{w},b}(\mathbf{x}^{(i)})) \\
 &= -\log(f_{\mathbf{w},b}(\mathbf{x}^{(i)}))
 \end{align}$$
+
+### Cost Function (sum of all loss)
+
+### $$ J(\vec{w}, b) = -\frac{1}{m} \sum\limits^{m}_{i=1}[ y^{(i)} \log(f_{\mathbf{\vec{w}},b}(\mathbf{x}^{(i)})) + (1 - y^{(i)}) \log(1 - f_{\mathbf{\vec{w}},b}(\mathbf{\vec{x}}^{(i)}))] $$
 
 ---
 💡 _Logistic regression is fundamental for binary classification problems_
