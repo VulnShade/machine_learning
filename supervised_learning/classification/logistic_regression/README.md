@@ -70,7 +70,7 @@ $\mathcal{f}_{\vec{w},x}(\vec{x}) = g(\underbrace{\vec{w} \cdot \vec{x} + b}_{z}
 
 <br>
 
-## 📉 Cost Function
+## 📉 [Cost Function](loss_function/loss_function.ipynb)
 > Measures how well the model's predictions match the actual values
 
 ### Loss Function Definition
