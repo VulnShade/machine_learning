@@ -40,7 +40,7 @@ $\mathcal{f}_{\vec{w}, b}(\vec{X}) = P(y=1|\vec{X};\vec{w},b)$
 
 <br>
 
-## 🎯 Decision Boundary
+## 🎯 [Decision Boundary](decision_boundary/decision_boundary.ipynb)
 > When the model makes classification decisions
 
 <img src="images/decision_boundary.png" alt="decision boundary visualization" width="750">
