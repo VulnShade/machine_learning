@@ -68,5 +68,26 @@ $\mathcal{f}_{\vec{w},x}(\vec{x}) = g(\underbrace{\vec{w} \cdot \vec{x} + b}_{z}
 ### Non-Linear Boundary
 <img src="images/decision_boundary_nonlinear.png" alt="non-linear decision boundary" width="750">
 
+<br>
+
+## 📉 Cost Function
+> Measures how well the model's predictions match the actual values
+
+### Loss Function Definition
+$L(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}), \vec{y}^{(i)}) = \begin{cases}
+-log({f}_{\vec{w},b}(\vec{x}^{(i)})) & \text{if } y^{(i)} = 1 \\
+-log(1 - {f}_{\vec{w},b}(\vec{x}^{(i)})) & \text{if } y^{(i)} = 0
+\end{cases}$
+
+### Loss Visualization
+
+#### When y = 1
+> Higher loss when prediction is closer to 0
+<img src="images/loss_y1.png" alt="loss function when y=1" width="750">
+
+#### When y = 0
+> Higher loss when prediction is closer to 1
+<img src="images/loss_y0.png" alt="loss function when y=0" width="750">
+
 ---
 💡 _Logistic regression is fundamental for binary classification problems_
