@@ -7,7 +7,7 @@
 ## 🔄 Overview
 <img src="images/classification_example.png" width="750" alt="classification example">
 
-## 📈 Sigmoid Function
+## 📈 [Sigmoid Function](sigmoid_function/sigmoid.ipynb)
 <img src="images/lr_function.png" width="750" alt="logistic regression function">
 
 > Converts any input into a probability between 0 and 1
