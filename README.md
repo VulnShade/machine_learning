@@ -4,6 +4,8 @@
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤-red.svg)](/)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
+`NOTE: Math formulas are optimized for full latex as viewed in IDE. Not all formulas will render on Github`
+
 ## 📚 Study Notes
 
 1. [ML Fundamentals](fundamentals/README.md)
