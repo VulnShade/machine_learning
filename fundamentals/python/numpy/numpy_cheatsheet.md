@@ -66,5 +66,10 @@ A @ v                       # Using matrix multiplication to calculate new vecto
 f = np.dot(w,x) + b          # vectorize implementation of LR model prediction
 ```
 
+### Logistic Regression
+```python
+np.exp(input_array)         # Caclulate exponential e^z (input array z)
+```
+
 ---
 💡 _This cheatsheet provides quick reference for common NumPy operations used in machine learning_

@@ -24,6 +24,7 @@
 ## 📊 Determinants
 
 ### 2x2 Matrix
+
 $det(A) = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc$
 
 ### 3x3 Matrix
