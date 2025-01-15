@@ -4,6 +4,20 @@
 
 > A classification algorithm that predicts discrete categories using probability
 
+## 📋 Contents
+- [Overview](#-overview)
+- [Sigmoid Function](#-sigmoid-function)
+- [Example Application](#-example-application)
+- [Mathematical Framework](#-mathematical-framework)
+- [Decision Boundary](#-decision-boundary)
+  - [Examples](#-decision-boundary-examples)
+- [Cost Function](#-cost-function)
+  - [Loss Function](#loss-function-definition)
+  - [Implementation](#-simplified-implementation-form)
+- [Gradient Descent](#-gradient-descent)
+- [Implementation Notes](#-implementation-notes)
+- [Scikit-learn Implementation](scikit_learn/scikit_learn.ipynb)
+
 ## 🔄 Overview
 <img src="images/classification_example.png" width="750" alt="classification example">
 

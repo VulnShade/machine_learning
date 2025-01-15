@@ -2,7 +2,7 @@
 
 [← Back to Main Page](../../../README.md) | [← Back to Fundamentals](../../README.md)
 
-## 📝 Quick Reference
+## 📝 Linear Regression 
 
 ### Basic Operations
 ```python
@@ -29,6 +29,34 @@ sgdr.fit(X_norm, y_train)
 ```python
 # Make predictions using trained model
 y_pred_sgd = sgdr.predict(X_norm)
+```
+<br>
+
+## 📝 Logistic Regression 
+
+### Basic Operations
+```python
+# Import common modules
+from sklearn.linear_model import LogisticRegression
+```
+
+### 📈 Model Training
+```python
+# Initialize and fit regression model
+lr_model = LogisticRegression()
+lr_model.fit(X, y)
+```
+
+### 🎯 Prediction
+```python
+# Make predictions using trained model
+y_pred = lr_model.predict(X)
+```
+
+### 🎯 Measure Accuracy
+```python
+# Calculate accuracy with score function
+print("Accuracy on training set:", lr_model.score(X, y))
 ```
 
 ---
