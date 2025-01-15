@@ -49,3 +49,29 @@
 - Medical diagnosis
 
 ---
+
+## Overfitting
+
+<table>
+  <tr>
+    <img src="images/overfitting_regression.png" alt="classification example" width=50%/>
+    <img src="images/overfitting_classification.png" alt="classification example" width=50%/>   
+  </tr>
+</table>
+
+#### Terms:
+- `high bias` - underfits the training data 
+- `high variance` - overfits the training data
+- `generalization` - does well on examples not in the training set
+
+### Addressing Overfitting
+1. Collect more training examples
+2. Select fewer features
+    - reduce total or polynomial features 
+3. Regularization
+  - reduces impact of features
+
+<br>
+
+### Regularization :
+<img src="images/regularization.png" alt="classification example" width=500/>   
