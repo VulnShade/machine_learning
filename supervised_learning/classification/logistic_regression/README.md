@@ -110,29 +110,34 @@ loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), 1) &= -(1) \log(f_{\mathbf{w},b}(\mathb
 &= -\log(f_{\mathbf{w},b}(\mathbf{x}^{(i)}))
 \end{align}$$
 
-### Cost Function (sum of all loss)
+### 📊 Cost Function Summary
+> Total cost across all training examples
 
-### $$ J(\vec{w}, b) = -\frac{1}{m} \sum\limits^{m}_{i=1}[ y^{(i)} \log(f_{\mathbf{\vec{w}},b}(\mathbf{x}^{(i)})) + (1 - y^{(i)}) \log(1 - f_{\mathbf{\vec{w}},b}(\mathbf{\vec{x}}^{(i)}))] $$
+$$ J(\vec{w}, b) = -\frac{1}{m} \sum\limits^{m}_{i=1}[ y^{(i)} \log(f_{\mathbf{\vec{w}},b}(\mathbf{x}^{(i)})) + (1 - y^{(i)}) \log(1 - f_{\mathbf{\vec{w}},b}(\mathbf{\vec{x}}^{(i)}))] $$
 
-<br>
+## 🔄 [Gradient Descent](gradient_decent/gradient_decent.ipynb)
+> Algorithm to minimize cost function
 
-## [Gradient Descent]()
+### Update Rules
+Repeat until convergence:
 
-### Algorithm
-#### repeat { <br>
-### $w_j = w_j - \alpha[\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)x_j^{(i)}]$<br> 
-### $b = b - \alpha[\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)]$
-}
+#### Weight Update
+$w_j = w_j - \alpha[\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)x_j^{(i)}]$
 
-## $\mathcal{f}_{\vec{w},b}(\vec{X}) = \frac{1}{1 + e^{-(\vec{w} \cdot \vec{x} + b)}}$
+#### Bias Update
+$b = b - \alpha[\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)]$
 
-<br>
+### Model Function
+> Sigmoid function used for predictions
 
-## [Feature Scaling](../../regression/linear_regression/README.md#feature-scaling) & [Learning Rate](../../regression/linear_regression/README.md#choosing-learning-rate)
-- Same as in linear regression 
+$\mathcal{f}_{\vec{w},b}(\vec{X}) = \frac{1}{1 + e^{-(\vec{w} \cdot \vec{x} + b)}}$
 
-`Click links above for notes`
+## 🛠️ Implementation Notes
+### Feature Scaling & Learning Rate
+> Same principles as linear regression apply
 
+- [Feature Scaling Details](../../regression/linear_regression/README.md#feature-scaling)
+- [Learning Rate Guide](../../regression/linear_regression/README.md#choosing-learning-rate)
 
 ---
 💡 _Logistic regression is fundamental for binary classification problems_
