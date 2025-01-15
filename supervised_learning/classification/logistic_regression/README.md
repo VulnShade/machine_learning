@@ -114,5 +114,25 @@ loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), 1) &= -(1) \log(f_{\mathbf{w},b}(\mathb
 
 ### $$ J(\vec{w}, b) = -\frac{1}{m} \sum\limits^{m}_{i=1}[ y^{(i)} \log(f_{\mathbf{\vec{w}},b}(\mathbf{x}^{(i)})) + (1 - y^{(i)}) \log(1 - f_{\mathbf{\vec{w}},b}(\mathbf{\vec{x}}^{(i)}))] $$
 
+<br>
+
+## [Gradient Descent]()
+
+### Algorithm
+#### repeat { <br>
+### $w_j = w_j - \alpha[\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)x_j^{(i)}]$<br> 
+### $b = b - \alpha[\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)]$
+}
+
+## $\mathcal{f}_{\vec{w},b}(\vec{X}) = \frac{1}{1 + e^{-(\vec{w} \cdot \vec{x} + b)}}$
+
+<br>
+
+## [Feature Scaling](../../regression/linear_regression/README.md#feature-scaling) & [Learning Rate](../../regression/linear_regression/README.md#choosing-learning-rate)
+- Same as in linear regression 
+
+`Click links above for notes`
+
+
 ---
 💡 _Logistic regression is fundamental for binary classification problems_

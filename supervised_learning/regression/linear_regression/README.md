@@ -96,14 +96,14 @@ f = np.dot(w,x) + b
 ```
 
 #### 2. [Cost Function](multiple_linear_regression/multiple_lin_reg.ipynb)
-### $J(\vec{w},b) = \frac{1}{2m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)²$
+### $J(\vec{w},b) = \frac{1}{2m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)²$
 
 #### 3. [Gradient Decent](multiple_linear_regression/multiple_lin_reg.ipynb)
-### $w_1 = w_1 - \alpha\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)x_1^{(i)}$
+### $w_1 = w_1 - \alpha[\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)x_1^{(i)}]$
 . . .
-### $w_n = w_n - \alpha\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)x_m^{(i)}$
+### $w_n = w_n - \alpha[\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)x_m^{(i)}]$
 
-### $b = b - \alpha\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾- y⁽ⁱ⁾)$
+### $b = b - \alpha[\frac{1}{m} \sum\limits_{i=1}^{m} (\mathcal{f}_{\vec{w},b}(\vec{x}⁽ⁱ⁾)- y⁽ⁱ⁾)]$
 
 `w = np.array([0.5, 1.3, ... 3.4])` <br>
 `d = np.array([0.3, 0.2, ... 0.4])` - derivatives <br>
