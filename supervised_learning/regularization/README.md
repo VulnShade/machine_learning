@@ -1,26 +1,43 @@
-# Regularization
-<img src="images/regularization.png">
+# 📊 Regularization
 
-### Intuition
-- Regularization term penalized model for large values of $w_j$
-- $\lambda$ = 0  will overfit
-- $\lambda$ = $10^{10}$ will underfit
+[← Back to Main Page](../../README.md) | [← Back to Supervised Learning](../supervised_learning.md)
 
-<br>
+> Technique to prevent overfitting by penalizing large parameter values
 
-## Implementation
+## 🎯 Overview
+<img src="images/regularization.png" alt="regularization visualization" width="750">
 
-### $w_j = w_j - \alpha [\frac{1}{m} \sum\limits^{m}_{i=1}[(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}) -y^{(i)}) \ x^{(i)}_{j}] + \frac{\lambda}{m} w_j] $
+### 💡 Key Concepts
+- Regularization term penalizes model for large values of $w_j$
+- Hyperparameter $\lambda$ controls regularization strength:
+  - $\lambda = 0$ → likely to overfit
+  - $\lambda = 10^{10}$ → likely to underfit
 
-### $b = b - \alpha \frac{1}{m} \sum\limits^{m}_{i=1}(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}) -y^{(i)}) $
+## 📐 Implementation
 
-<br>
+### Gradient Descent Update Rules
 
-####  Linear Regression: $ \quad \ \ \ \mathcal{f}_{\vec{w},b}(\vec{X}) = \vec{w} \cdot \vec{x} + b$ 
+#### Weight Update
+> Including regularization term
 
-####  Logistic Regression: $ \quad \mathcal{f}_{\vec{w},b}(\vec{X}) = \frac{1}{1 + e^{-(\vec{w} \cdot \vec{x} + b)}}$
+## $w_j = w_j - \alpha [\frac{1}{m} \sum\limits^{m}_{i=1}[(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}) -y^{(i)}) \ x^{(i)}_{j}] + \frac{\lambda}{m} w_j]$
 
-<br>
+#### Bias Update
+> Bias term is not regularized
 
+## $b = b - \alpha \frac{1}{m} \sum\limits^{m}_{i=1}(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}) -y^{(i)})$
 
-S
+### Model Functions
+
+#### Linear Regression
+> Base model for continuous values
+
+## $\mathcal{f}_{\vec{w},b}(\vec{X}) = \vec{w} \cdot \vec{x} + b$
+
+#### Logistic Regression
+> Base model for binary classification
+
+## $\mathcal{f}_{\vec{w},b}(\vec{X}) = \frac{1}{1 + e^{-(\vec{w} \cdot \vec{x} + b)}}$
+
+---
+💡 _Regularization helps achieve the right balance between model complexity and generalization_

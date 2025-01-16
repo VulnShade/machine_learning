@@ -153,5 +153,23 @@ $\mathcal{f}_{\vec{w},b}(\vec{X}) = \frac{1}{1 + e^{-(\vec{w} \cdot \vec{x} + b)
 - [Feature Scaling Details](../../regression/linear_regression/README.md#feature-scaling)
 - [Learning Rate Guide](../../regression/linear_regression/README.md#choosing-learning-rate)
 
+
+## [Regularization](../../regularization/README.md)
+
+### [Implementation](../../regularization/regularization.ipynb)
+
+### Gradient Descent Update Rules
+
+#### Weight Update
+> Including regularization term
+
+## $w_j = w_j - \alpha [\frac{1}{m} \sum\limits^{m}_{i=1}[(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}) -y^{(i)}) \ x^{(i)}_{j}] + \frac{\lambda}{m} w_j]$
+
+#### Bias Update
+> Bias term is not regularized
+
+## $b = b - \alpha \frac{1}{m} \sum\limits^{m}_{i=1}(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}) -y^{(i)})$
+
+
 ---
 💡 _Logistic regression is fundamental for binary classification problems_

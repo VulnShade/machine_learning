@@ -124,6 +124,23 @@ w = w - 0.1 * d
 
 <br>
 
+## [Regularization](../../regularization/README.md)
+
+### [Implementation](../../regularization/regularization.ipynb)
+
+### Gradient Descent Update Rules
+
+#### Weight Update
+> Including regularization term
+
+## $w_j = w_j - \alpha [\frac{1}{m} \sum\limits^{m}_{i=1}[(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}) -y^{(i)}) \ x^{(i)}_{j}] + \frac{\lambda}{m} w_j]$
+
+#### Bias Update
+> Bias term is not regularized
+
+## $b = b - \alpha \frac{1}{m} \sum\limits^{m}_{i=1}(\mathcal{f}_{\vec{w},b}(\vec{x}^{(i)}) -y^{(i)})$
+
+
 ## [Feature Scaling](feature_scaling/README.md)
 
 <img src="images/feature_scaling_ex.png" alt="mulitple 
