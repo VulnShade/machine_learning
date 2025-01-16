@@ -73,5 +73,5 @@
 
 <br>
 
-### Regularization :
+### [Regularization](regularization/README.md) :
 <img src="images/regularization.png" alt="classification example" width=500/>   
