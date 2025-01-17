@@ -52,6 +52,7 @@ np.linalg.norm(v)           # norm of a vector (length)
 np.linalg.solve(A, b)         # Solve linear system Ax = b
 np.linalg.det(A)             # Calculate determinant
 np.linalg.matrix_rank(A)     # Calculate matrix rank
+np.linalg.inv(A)             # Find inverse of matrix A
 np.dot(w,x)                  # Dot product
 np.matmul(A, B)              # Matrix multiplication
 A @ B                        # Matrix multiplication/Dot Product shorthand

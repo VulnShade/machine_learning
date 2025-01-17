@@ -39,6 +39,8 @@ c\begin{vmatrix}d & e \\ g & h\end{vmatrix}$
 - det = 0 → Matrix is singular (no inverse)
 - det ≠ 0 → System has unique solution
 - |AB| = |A| × |B|
+- $|A^{-1}|$ = $|A|^{-1}$ 
+- $|I| = 1 \quad$ (Identity matrix)
 
 ## 🔄 Solving Systems of Equations
 
@@ -244,7 +246,7 @@ use vectors $ \begin{bmatrix}
 
 <br>
 
-<img src="images/matrix_multiplication.png" alt="matrix mulitiplication"  width=500>
+<img src="images/matrix_multiplication.png" alt="matrix multiplication"  width=500>
 
 <br>
 
@@ -255,15 +257,47 @@ use vectors $ \begin{bmatrix}
 <br>
 
 ### Singularity & rank of linear transformations
-- If maintains dimensions of pretranformation matrix = non-singular, else singular
+- If maintains dimensions of pre-transformation matrix = non-singular, else singular
 - \# dimensions = rank 
+- Determinant = area of transformed parallelogram 
+- Negative determinant indicates rotation 
 <br>
 
 <img src="images/singularity_trans.png" width=750>S
 
+<table>
+  <thead>
+    <tr>
+      <th style="width:250px">rank 2 </th>
+      <th style="width:250px">rank 1</th>
+      <th style="width:250px">rank 0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Det = 5</td>
+      <td>Det = 0</td>
+      <td>Det = 0</td>
+    </tr>
+        <tr>
+      <td>Area of transformation = 5</td>
+      <td>Area of transformation = 0 (line)</td>
+      <td>Area of transformation = 0 (point)</td>
+    </tr>
+  </tbody>
+</table>
 
-| rank       |rank | rankK  |
-|---------|-------------|-------------|
+<br>
+
+### Determinant of a product
+
+$\begin{vmatrix}AB\end{vmatrix} = \begin{vmatrix}A\end{vmatrix}\begin{vmatrix}B\end{vmatrix}$
+
+<img src="images/det_product.png" width=750>
+
+<br>
+
+`Therefore det of non-singular matrix and singular matrix (det 0) is 0 or singular`
 
 <br>
 
@@ -303,7 +337,7 @@ e\\
 
 ### `Matrices with 0 determinant have no inverse`
 
-#### Product of a matrix and its invere = identity matrix
+#### Product of a matrix and its inverse = identity matrix
 - Determinant of inverse with be inverse of the determinant of the matrix <br>
 <br>
 
@@ -345,6 +379,20 @@ Example:
 
 - for dimension reduction
 - works with eigenvalue and eigenvectors
+
+<br>
+
+## Eigenvalues and Eigenvectors:
+
+### Basis
+
+<img src="images/basis.png" width=750>
+
+<br>
+
+- minimal set of vectors that span entire space
+- Number of elements in basis = dimension
+
 
 ---
 💡 _Understanding these concepts is crucial for machine learning algorithms_
