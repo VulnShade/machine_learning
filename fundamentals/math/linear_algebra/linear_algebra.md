@@ -252,6 +252,18 @@ use vectors $ \begin{bmatrix}
 - Products matrix with A rows X B columns 
     - ex. 3 x 3 $\cdot$ 3 x 2 = 3 x 2 matrix
 
+<br>
+
+### Singularity & rank of linear transformations
+- If maintains dimensions of pretranformation matrix = non-singular, else singular
+- \# dimensions = rank 
+<br>
+
+<img src="images/singularity_trans.png" width=750>S
+
+
+| rank       |rank | rankK  |
+|---------|-------------|-------------|
 
 <br>
 
@@ -326,6 +338,13 @@ Example:
 <img src="images/finding_inverse.png" alt="inverse matrix" width=750>
 
 <br>
+
+
+## Principal Component Analysis (PCA)
+<img src="images/pca.png" alt="inverse matrix" width=750>
+
+- for dimension reduction
+- works with eigenvalue and eigenvectors
 
 ---
 💡 _Understanding these concepts is crucial for machine learning algorithms_
