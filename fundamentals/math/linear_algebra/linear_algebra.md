@@ -393,6 +393,100 @@ Example:
 - minimal set of vectors that span entire space
 - Number of elements in basis = dimension
 
+### Finding eigenvalues
+<img src="images/find_eigenvalues.png" width=750>
+
+### Finding eigenvectors
+
+Eigenvalues: $\lambda = 2, \lambda = 3$
+
+### $\vec{0} = (\lambda I_n - A)\vec{v}\\$ 
+$\vec{0}$ = 0 matrix <br>
+$I_n$ = Identity matrix (n x n) <br>
+$\vec{v}$ = Eigenvector <br>
+$\lambda$ = Eigenvalue
+
+<br>
+
+### For $\lambda = 2$ :
+
+#### 1. Setup formula:
+
+$\begin{bmatrix}
+2 & 0 \\
+0 & 2 
+\end{bmatrix} - \begin{bmatrix}
+2 & 1 \\
+0 & 3 
+\end{bmatrix} \cdot \begin{bmatrix}
+x \\
+y 
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix}$
+
+#### 2. Subtract matrices
+$\begin{bmatrix}
+0 & -1 \\
+0 & -1 
+\end{bmatrix}$
+
+#### 3. Use row operations to get reduced row echelon form:
+$\begin{bmatrix}
+0 & 1 \\
+0 & 0 
+\end{bmatrix} $
+
+#### 4. Calculate x & y (null space)
+
+$\begin{bmatrix}
+0 & 1 \\
+0 & 0 
+\end{bmatrix} \cdot \begin{bmatrix}
+x \\
+y 
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix} = 0x + y = 0 \\$
+
+For $\lambda = 2, \ \vec{v} = \begin{bmatrix}
+1 \\
+0
+\end{bmatrix}$ 
+
+### For $\lambda = 3$ :
+
+$\begin{bmatrix}
+3 & 0 \\
+0 & 3 
+\end{bmatrix} - \begin{bmatrix}
+2 & 1 \\
+0 & 3 
+\end{bmatrix} \cdot \begin{bmatrix}
+x \\
+y 
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix}$
+
+$\begin{bmatrix}
+1 & -1 \\
+0 & 0 
+\end{bmatrix} \cdot \begin{bmatrix}
+x \\
+y 
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix} \quad = \quad x - y = 0 \quad = \quad x = y\\$
+
+For $\lambda = 3, \ \vec{v} = \begin{bmatrix}
+1 \\
+1
+\end{bmatrix}$ 
 
 ---
 💡 _Understanding these concepts is crucial for machine learning algorithms_
