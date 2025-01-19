@@ -56,6 +56,7 @@ np.linalg.inv(A)             # Find inverse of matrix A
 np.dot(w,x)                  # Dot product
 np.matmul(A, B)              # Matrix multiplication
 A @ B                        # Matrix multiplication/Dot Product shorthand
+A_eig = np.linalg.eig(A)     # Find Eigenvalues and Eigenvectors
 
 # Linear transformations
 A @ v                       # Using matrix multiplication to calculate new vector
