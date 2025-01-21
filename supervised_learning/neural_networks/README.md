@@ -24,10 +24,13 @@ model.compile(
     optimizer = tf.keras.optimizers.Adam(learning_rate=0.01),
 )
 
+    # BinaryCrossentropy() = Logistic regression (-ylog(f(x)) - (1-y)log(1-f(x)))
+    # MeanSquaredError() = Regression 
+
 # runs gradient descent and fits the weights to the data
 model.fit(
     Xt,Yt,            
-    epochs=10,
+    epochs=10,   # number of steps in gradient decent
 )
 
 # list weights and bias
@@ -42,4 +45,28 @@ predictions = model.predict(X_testn)
 print("predictions = \n", predictions)
 yhat = (predictions >= 0.5).astype(int)
 print(f"decisions = \n{yhat}")
+```
+<br>
+
+## Activation Functions
+
+<img src="images/activation_funcs.png" width= 750>
+
+### Choosing a function:
+#### Output Layer:
+- `Binary Classification` - sigmoid
+- `Regression` - Linear activation
+- `Regression` (if y can only be positive) - ReLU
+
+#### Hidden Layers
+- `ReLU` - In most cases
+    - Faster for gradient decent
+
+Example:
+```python
+model = Sequential([                     
+    Dense(units=25, activation="relu"), # Layer 1
+    Dense(units=15, activation="relu")  # Layer 2
+    Dense(units=1, activation="sigmoid")   # Output layer
+])
 ```
