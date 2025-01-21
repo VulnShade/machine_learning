@@ -75,3 +75,8 @@
 
 ### [Regularization](regularization/README.md) :
 <img src="images/regularization.png" alt="classification example" width=500/>   
+
+<br>
+
+## [Neural Networks](neural_networks/README.md)
+<img src="neural_networks/images/neural_net_ex.png">

@@ -1,3 +1,5 @@
+[← Back to Main Page](../../README.md) | [← Back to Overview](../supervised_learning.md)
+
 # Neural Networks
 <img src="images/neural_net_ex.png">
 
@@ -7,7 +9,7 @@
 <img src="images/fwd_prop_py.png">
 
 
-## Building a Neural Network Tensorflow
+## [Building a Neural Network Tensorflow](simple_implementation/tensorflow.ipynb)
 
 
 ```python
