@@ -1,21 +1,31 @@
 [← Back to Main Page](../../README.md) | [← Back to Overview](../supervised_learning.md)
 
-# Neural Networks
-<img src="images/neural_net_ex.png">
+# 🧠 Neural Networks
 
-<br>
+## Table of Contents
+- [Forward Propagation Implementation](#forward-prop-in-python)
+- [TensorFlow Implementation](#building-a-neural-network-tensorflow)
+- [Activation Functions](#activation-functions)
+- [Multiclass Classification](#multiclass-classification)
 
-## [Forward prop in Python](simple_implementation/python_manual.ipynb)
-<img src="images/fwd_prop_py.png">
+---
 
+<div align="center">
+  <img src="images/neural_net_ex.png" alt="Neural Network Architecture" width="800">
+</div>
 
-## [Building a Neural Network Tensorflow](simple_implementation/tensorflow.ipynb)
+## 🔄 [Forward prop in Python](simple_implementation/python_manual.ipynb)
+<div align="center">
+  <img src="images/fwd_prop_py.png" alt="Forward Propagation" width="700">
+</div>
 
+## 🛠️ [Building a Neural Network Tensorflow](simple_implementation/tensorflow.ipynb)
 
 ```python
-model = Sequential([                      # Combine to create neural network
-    Dense(units=3, activation="sigmoid"), # Create layer with 3 nodes
-    Dense(units=1, activation="sigmoid")  # Create layer with 1 node
+# Create a Sequential Neural Network
+model = Sequential([                      
+    Dense(units=3, activation="sigmoid"), # Layer with 3 nodes
+    Dense(units=1, activation="sigmoid")  # Output layer
 ])
 
 #  defines a loss function and specifies a compile optimization
@@ -48,25 +58,64 @@ print(f"decisions = \n{yhat}")
 ```
 <br>
 
-## Activation Functions
+## ⚡ Activation Functions
 
-<img src="images/activation_funcs.png" width= 750>
+<div align="center">
+  <img src="images/activation_funcs.png" alt="Activation Functions" width="800">
+</div>
 
-### Choosing a function:
+### 🎯 Choosing a function:
 #### Output Layer:
-- `Binary Classification` - sigmoid
-- `Regression` - Linear activation
-- `Regression` (if y can only be positive) - ReLU
+- 🔄 `Binary Classification` → sigmoid
+- 📈 `Regression` → Linear activation
+- 📊 `Regression` (positive only) → ReLU
 
 #### Hidden Layers
-- `ReLU` - In most cases
-    - Faster for gradient decent
+- ⚡ `ReLU` - Recommended for most cases
+  - Faster convergence in gradient descent
 
-Example:
+<details>
+<summary>📝 Example Implementation</summary>
+
 ```python
 model = Sequential([                     
-    Dense(units=25, activation="relu"), # Layer 1
-    Dense(units=15, activation="relu")  # Layer 2
-    Dense(units=1, activation="sigmoid")   # Output layer
+    Dense(units=25, activation="relu"),     # Layer 1
+    Dense(units=15, activation="relu"),     # Layer 2
+    Dense(units=1, activation="sigmoid")    # Output layer
 ])
 ```
+</details>
+
+---
+
+## 🎯 Multiclass Classification
+> Predicts probability of y being equal to each class
+
+<div align="center">
+  <img src="images/multiclass_ex.png" alt="Multiclass Classification" width="700">
+</div>
+
+### 🔢 Softmax Regression Algorithm
+<div align="center">
+  <img src="images/softmax_ex.png" alt="Softmax Example" width="600">
+</div>
+
+#### 📐 Basic algorithm: 
+### $z_j = \vec{w}_j \cdot \vec{x} + b_j \quad j=1, ..., N \\$
+### $a_j = \frac{e^{z_j}}{\sum\limits^{N}_{k=1} e^{z_k}} = P(y=j|\vec{x})$
+
+> **Note:** $a_1 + a_2 + ... + a_N = 1$
+
+#### 📊 Softmax Cost function
+<div align="center">
+  <img src="images/softmax_cost.png" alt="Softmax Cost" width="600">
+</div>
+
+<br>
+
+$loss(a_1,...,a_N, y) =  \begin{cases}
+   -log \ a_1 \quad \text{if} \ y = 1 \\
+   -log \ a_2 \quad \text{if} \ y = 2 \\
+    \quad \quad \quad \quad... \\
+    -log \ a_N \quad \text{if} \ y = N \\
+\end{cases}$
