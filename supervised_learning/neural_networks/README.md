@@ -132,6 +132,7 @@ model = Sequential([
 
 model.compile(
     loss = tf.keras.losses.SparseCategoricalCrossentropy()
+    optimizer=tf.keras.optimizers.Adam(0.001),
 )
 
 model.fit(X,Y epochs=100)
@@ -153,14 +154,15 @@ model = Sequential([
 model.compile(
      # Uses softmax internally in loss function
     loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+    optimizer=tf.keras.optimizers.Adam(0.001),
 )
 
 # Fit
 model.fit(X,Y epochs=100)
 
 # Predict
-logits = model(X)               
-f_x = tf.nn.softmax(logits)
+prediction = model.predict(X)               
+sm = tf.nn.softmax(prediction).numpy()
 ```
 </details>
 
