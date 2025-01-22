@@ -119,3 +119,47 @@ $loss(a_1,...,a_N, y) =  \begin{cases}
     \quad \quad \quad \quad... \\
     -log \ a_N \quad \text{if} \ y = N \\
 \end{cases}$
+
+<details>
+<summary>📝 Example Implementation</summary>
+
+```python
+model = Sequential([                     
+    Dense(units=25, activation="relu"),    
+    Dense(units=15, activation="relu"),    
+    Dense(units=10, activation="softmax")   # units = number of classifications
+])
+
+model.compile(
+    loss = tf.keras.losses.SparseCategoricalCrossentropy()
+)
+
+model.fit(X,Y epochs=100)
+```
+</details>
+
+<details>
+<summary>📝 More Accurate Implementation (Recommended)</summary>
+
+```python
+# Model
+model = Sequential([                     
+    Dense(units=25, activation="relu"),    
+    Dense(units=15, activation="relu"),    
+    Dense(units=10, activation="linear")   # softmax used in loss function instead
+])                                         # This is more accurate.
+
+# Loss
+model.compile(
+     # Uses softmax internally in loss function
+    loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+)
+
+# Fit
+model.fit(X,Y epochs=100)
+
+# Predict
+logits = model(X)               
+f_x = tf.nn.softmax(logits)
+```
+</details>
