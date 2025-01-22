@@ -163,3 +163,25 @@ logits = model(X)
 f_x = tf.nn.softmax(logits)
 ```
 </details>
+
+<br>
+
+## Multi-label Classification
+
+<img src="images/mulit-label_ex.png">
+
+`Identifying more than 1 class from single input`
+- ex. From an image identify a pedestrian, a bus, and a car
+
+<br>
+
+### Model options:
+1. Neural network for each classification
+
+    <img src="images/multi-label_3.png">
+
+    <br>
+
+2. Train one neural net with multiple outputs
+
+    <img src="images/multi-label_single.png">
