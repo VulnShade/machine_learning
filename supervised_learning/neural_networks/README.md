@@ -88,7 +88,7 @@ model = Sequential([
 
 ---
 
-## 🎯 Multiclass Classification
+## 🎯 [Multiclass Classification](multiclass/C2_W2_Multiclass_TF.ipynb)
 > Predicts probability of y being equal to each class
 
 <div align="center">
@@ -106,7 +106,7 @@ model = Sequential([
 
 > **Note:** $a_1 + a_2 + ... + a_N = 1$
 
-#### 📊 Softmax Cost function
+#### 📊 [Softmax Cost function](softmax/C2_W2_SoftMax.ipynb)
 <div align="center">
   <img src="images/softmax_cost.png" alt="Softmax Cost" width="600">
 </div>
@@ -187,3 +187,11 @@ sm = tf.nn.softmax(prediction).numpy()
 2. Train one neural net with multiple outputs
 
     <img src="images/multi-label_single.png">
+
+<br>
+
+## Advanced Optimization
+
+### Adam Algorithm (Adaptive Moment estimation)
+- Automatically adjust learning rate
+- Separate learning rate for each parameter of the model
