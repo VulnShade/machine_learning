@@ -7,6 +7,9 @@
 - [TensorFlow Implementation](#building-a-neural-network-tensorflow)
 - [Activation Functions](#activation-functions)
 - [Multiclass Classification](#multiclass-classification)
+- [Multi-label Classification](#multi-label-classification)
+- [Advanced Optimization](#advanced-optimization)
+- [Layer Types](#layer-types)
 
 ---
 
@@ -195,3 +198,39 @@ sm = tf.nn.softmax(prediction).numpy()
 ### Adam Algorithm (Adaptive Moment estimation)
 - Automatically adjust learning rate
 - Separate learning rate for each parameter of the model
+
+<br>
+
+```python
+optimizer=tf.keras.optimizers.Adam(0.001)
+```
+
+<br>
+
+## Layer Types
+
+
+### 1. Dense Layer
+
+- Each neuron output is a function of all activation outputs of previous layer
+
+  <img src="images/dense_layer.png">
+
+### 2. Convolutional Layer
+- Each neuron looks at smaller portion of previous layer's outputs
+
+  <img src="images/convolutional_layer.png">
+
+<br>
+
+#### Benefits:
+- Faster computation
+- Need less training data
+- Less prone to overfitting
+
+<br>
+
+<details>
+<summary>Convolutional Neural Network Example</summary>
+<img src="images/convolutional_nn.png">
+</details>
