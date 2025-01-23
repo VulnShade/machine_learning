@@ -11,7 +11,7 @@
    - Matrix Rank
    - Vectors
 2. Statistics (coming soon)
-3. Calculus (coming soon)
+3. [Calculus](calculus/README.md)
 
 ---
 💡 _Mathematics provides the foundation for understanding machine learning concepts_
