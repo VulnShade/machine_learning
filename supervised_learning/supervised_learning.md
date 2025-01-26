@@ -80,3 +80,19 @@
 
 ## [Neural Networks](neural_networks/README.md)
 <img src="neural_networks/images/neural_net_ex.png">
+
+<br>
+
+## Evaluating a model
+1. Split dataset into 2 portions:
+    - 70% training set
+    - 30% Test set 
+  
+2. Train model with training set
+
+3. Evaluate model by computing training error and test error
+    - Do not use regularization term for these calculations
+
+### Regression Overfitting example:
+
+<img src="images/reg_overfit_Ex.png" width=500>
