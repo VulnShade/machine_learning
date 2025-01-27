@@ -14,6 +14,10 @@
 - [Neural Networks](#neural-networks)
 - [Evaluating a model](#evaluating-a-model)
 - [Model Selection](#model-selection)
+- [Bias & Variance](#bias--variance)
+  - [Regularization](#regularization-1)
+  - [Debugging a learning algorithm](#debugging-a-learning-algorithm)
+  - [Neural Networks](#neural-networks-1)
 
 > Learning from labeled examples to make predictions
 
@@ -148,7 +152,7 @@ $J_{train}(\vec{w},b)$ = fraction of training set that were misclassified
 
 <br>
 
-## Bias & Variance
+## [Bias & Variance](bias_variance/diagnosing_bias_and_variance.ipynb)
 
 <img src="images/bias_variance.png" width=750>
 
@@ -164,7 +168,7 @@ $J_{train}(\vec{w},b)$ = fraction of training set that were misclassified
 
 #### Effects on bias and variance:
 <img src="images/bias_var_regularization.png" width=750>
-
+S
 <br>
 
 #### Choosing regularization parameter $\lambda$ :
@@ -172,3 +176,25 @@ $J_{train}(\vec{w},b)$ = fraction of training set that were misclassified
 <img src="images/choosing_lambda.png" width=750>
 
 - Check with cross-validation set
+
+### Debugging a learning algorithm
+
+#### High Bias:
+- Try adding polynomial features ($x^{2}_1, x^{2}_2, x_1,x_2$, etc)
+- Try getting additional features
+- Try decreasing $\lambda$
+
+#### High Variance
+- Get more training data
+- Try smaller set of features
+- Try increasing $\lambda$
+
+<br>
+
+### Neural Networks
+- Large neural networks are low bias machines
+- Larger neural network will do better than s
+
+  #### To get accurate model: 
+
+  <img src="images/nn_bias_var.png" width=750>

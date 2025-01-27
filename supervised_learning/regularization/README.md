@@ -13,7 +13,7 @@
   - $\lambda = 0$ → likely to overfit
   - $\lambda = 10^{10}$ → likely to underfit
 
-## 📐 Implementation
+## 📐 [Implementation](regularization.ipynb)
 
 ### Gradient Descent Update Rules
 
@@ -38,6 +38,12 @@
 > Base model for binary classification
 
 ## $\mathcal{f}_{\vec{w},b}(\vec{X}) = \frac{1}{1 + e^{-(\vec{w} \cdot \vec{x} + b)}}$
+
+
+### Neural Network implementation
+```python
+layer_1 = Dense(units=25, activation="relu", kernel_regularizer=L2(0.01)))
+```
 
 ---
 💡 _Regularization helps achieve the right balance between model complexity and generalization_
