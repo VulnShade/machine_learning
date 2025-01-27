@@ -2,6 +2,19 @@
 
 [← Back to Main Page](../README.md) | [← Back to Overview](../machine_learning.md)
 
+## Table of Contents
+- [Key Concepts](#-key-concepts)
+- [Common Applications](#-common-applications)
+- [Types of Supervised Learning](#-types-of-supervised-learning)
+  - [Regression](#1-regression-)
+  - [Classification](#2-classification-️)
+- [Overfitting](#overfitting)
+  - [Addressing Overfitting](#addressing-overfitting)
+  - [Regularization](#regularization)
+- [Neural Networks](#neural-networks)
+- [Evaluating a model](#evaluating-a-model)
+- [Model Selection](#model-selection)
+
 > Learning from labeled examples to make predictions
 
 ## 📝 Key Concepts
@@ -96,3 +109,40 @@
 ### Regression Overfitting example:
 
 <img src="images/reg_overfit_Ex.png" width=500>
+
+<br>
+
+### Classification
+
+$J_{test}(\vec{w},b)$ = fraction of test set that were misclassified <br>
+$J_{train}(\vec{w},b)$ = fraction of training set that were misclassified
+
+<br>
+
+## [Model Selection](model_selection/model_selection.ipynb):
+### 1. Split data
+
+- 60% - Training set
+- 20% - Cross Validation or Dev set 
+- 20% - Test set
+
+`Cross validation will check validity of different models`
+
+<br>
+
+### 2. Try different models
+
+- #### Different degree polynomials
+  <img src="images/model_selection.png" width=600>
+
+- #### Different neural network architecture
+  <img src="images/neural_net_sel.png" width=600>
+<br>
+
+### 3. Calculate error
+<img src="images/model_sel_er.png" width=600>
+
+### 4. Pick model with lowest Dev error
+
+### 5. Use test set to estimate generalization error
+
