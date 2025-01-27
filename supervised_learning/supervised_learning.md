@@ -146,3 +146,29 @@ $J_{train}(\vec{w},b)$ = fraction of training set that were misclassified
 
 ### 5. Use test set to estimate generalization error
 
+<br>
+
+## Bias & Variance
+
+<img src="images/bias_variance.png" width=750>
+
+<br>
+
+#### Comparing error to degree of polynomial 
+
+<img src="images/bias_var_deg_poly.png">
+
+<br>
+
+### Regularization
+
+#### Effects on bias and variance:
+<img src="images/bias_var_regularization.png" width=750>
+
+<br>
+
+#### Choosing regularization parameter $\lambda$ :
+
+<img src="images/choosing_lambda.png" width=750>
+
+- Check with cross-validation set
