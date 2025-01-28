@@ -42,7 +42,7 @@
 
 ### Neural Network implementation
 ```python
-layer_1 = Dense(units=25, activation="relu", kernel_regularizer=L2(0.01)))
+layer_1 = Dense(units=25, activation="relu", kernel_regularizer=tf.keras.regularizers.l2(0.01)))
 ```
 
 ---

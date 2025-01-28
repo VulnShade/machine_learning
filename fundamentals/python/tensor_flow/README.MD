@@ -39,11 +39,19 @@ W2, b2 = model.get_layer("layer2").get_weights()
 
 ## Regularization
 ```python
-model = Sequential(
+
+# With regularization and optimizer
+tf.random.set_seed(1234)
+model_r = Sequential(
     [
-        tf.keras.Input(shape=(2,)),                         # set shape of input for weights and bias
-        Dense(3, activation='relu', name = 'layer1', kernel_regularizer=L2(0.01)),  # 0.01 is value of lambda
-        Dense(1, activation='sigmoid', name = 'layer2', kernel_regularizer=L2(0.01))
-     ]
+        Dense(120, activation="relu", kernel_regularizer=tf.keras.regularizers.l2(0.1)),
+        Dense(40, activation="relu", kernel_regularizer=tf.keras.regularizers.l2(0.1)),
+        Dense(6, activation="linear")   # No regularizer in final layer        
+    ], name= None
 )
+model_r.compile(
+    loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+    optimizer=tf.keras.optimizers.Adam(0.01),
+)
+
 ```
