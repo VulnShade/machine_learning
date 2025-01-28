@@ -22,3 +22,22 @@
 
 ### $H(p_1) = -p_1log_2(p_1) - p_0log_2(p_0)$
 ###  $\quad\quad\quad =  -p_1log_2(p_1) - (1 - p_1)log_2(1-p_1)$
+
+<br>
+
+## Information Gain
+- Used for pick most useful features to split on
+
+<img src="images/information_gain.png" width=750>
+
+<br>
+
+- $p_1^{left}$ - Fraction of examples in left subtree with positive label
+- $w^{left}$ - Fraction of all examples in root node that went to the left
+- $p_1^{right}$ - Fraction of examples in right subtree with positive label
+- $w^{right}$ - Fraction of all examples in root node that went to the right
+- $p_1^{root}$ - Fraction of positive examples in root node
+
+### Choosing a feature to split on:
+- Calculate for features as root node
+- Pick one with highest information gain
