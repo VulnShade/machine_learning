@@ -198,3 +198,19 @@ S
   #### To get accurate model: 
 
   <img src="images/nn_bias_var.png" width=750>
+
+  <br>
+  
+
+## [Decision Trees](decision_trees/README.md)
+
+<img src="images/decision_tree.png" width=750>
+
+### Decision 1: How to choose which feature to split on each node
+- Maximize purity (minimize impurity)
+
+### Decision  2: When do you stop splitting?
+- when a node is 100% one class
+- When splitting a node will result in the tree exceeding a maximum depth 
+- When improvements in purity score are below a threshold
+- When number of examples in a node is below a threshold
