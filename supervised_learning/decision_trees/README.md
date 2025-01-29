@@ -44,9 +44,11 @@
 
 <br>
 
-## One-hot encoding
+## One-hot encoding of categorical features
 - encode categorical feature as binary (1 or 0)
 
     <img src="images/one_hot_encoding.png">
 
 <br>
+
+## Continuous valued features
