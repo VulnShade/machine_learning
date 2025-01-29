@@ -41,3 +41,12 @@
 ### Choosing a feature to split on:
 - Calculate for features as root node
 - Pick one with highest information gain
+
+<br>
+
+## One-hot encoding
+- encode categorical feature as binary (1 or 0)
+
+    <img src="images/one_hot_encoding.png">
+
+<br>
