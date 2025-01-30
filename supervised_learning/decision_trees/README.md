@@ -52,3 +52,7 @@
 <br>
 
 ## Continuous valued features
+- Calculate information gain for different point
+- Split on the one with highest gain
+
+    <img src="images/continuous_value.png" width=500>
