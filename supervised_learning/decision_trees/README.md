@@ -73,3 +73,12 @@
 - Choose largest reduction in variance from root
 
     <img src="images/reg_split.png" width=750>
+
+<br>
+
+## Tree Ensembles
+`Collection of multiple trees`
+
+<img src="images/tree_ensemble.png" width=750>
+
+- Trees will vote on classification
