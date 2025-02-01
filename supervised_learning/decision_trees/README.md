@@ -56,3 +56,20 @@
 - Split on the one with highest gain
 
     <img src="images/continuous_value.png" width=500>
+
+
+## Regression with Decision Trees: Predicting a number
+
+ <img src="images/regression.png" width=750>
+
+<br>
+
+#### Model will assign average of values at leaf node
+
+<img src="images/avg_reg.png" >
+
+### Choosing a split
+- Calculate variance at each node
+- Choose largest reduction in variance from root
+
+    <img src="images/reg_split.png" width=750>
