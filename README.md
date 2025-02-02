@@ -13,16 +13,20 @@
    - Mathematics Essentials
    - Tools & Libraries
    - Terminology
-2. [Machine Learning Overview](machine_learning.md)
+2. [Tools](tools/README.md)
+   - Jupyter setup script
+   - Jupyter cleanup script
+3. [Machine Learning Overview](machine_learning.md)
    - What is Machine Learning?
    - Types of Machine Learning Algorithms
    - Key Concepts
-3. [Supervised Learning](supervised_learning/supervised_learning.md)
+4. [Supervised Learning](supervised_learning/supervised_learning.md)
    - Key Concepts
    - Common Applications
-4. [Unsupervised Learning](unsupervised_learning/unsupervised_learning.md)
+5. [Unsupervised Learning](unsupervised_learning/unsupervised_learning.md)
    - Key Concepts
    - Common Applications
+
 
 ## 📖 Additional Resources
 Check out our curated list of [learning resources](resources.md) including:
