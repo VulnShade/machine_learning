@@ -58,6 +58,19 @@ y_pred = lr_model.predict(X)
 # Calculate accuracy with score function
 print("Accuracy on training set:", lr_model.score(X, y))
 ```
+<br> 
+
+## Split Training Data
+```python
+# Get 60% of the dataset as the training set. Put the remaining 40% in temporary variables: x_ and y_.
+x_train, x_, y_train, y_ = train_test_split(x, y, test_size=0.40, random_state=1)
+
+# Split the 40% subset above into two: one half for cross validation and the other for the test set
+x_cv, x_test, y_cv, y_test = train_test_split(x_, y_, test_size=0.50, random_state=1)
+
+# Delete temporary variables
+del x_, y_
+```
 
 ---
 💡 _Quick reference for common Scikit-learn operations in machine learning_

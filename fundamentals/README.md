@@ -14,6 +14,7 @@
 1. [NumPy arrays](python/numpy/numpy_arrays.ipynb)
 2. [NumPy Cheatsheet](python/numpy/numpy_cheatsheet.md)
 3. [Scikit-learn Cheatsheet](python/scikit_learn/scikit_learn_cheatsheet.md)
+4. [Pandas Cheatsheet](python/pandas/README.md)
 
 ### Linear Algebra Implementation
 1. [Solving Linear Systems (2 Variables)](python/numpy/solving_linear_systems_2_variables.ipynb)

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from networkx.drawing.nx_pydot import graphviz_layout
 import numpy as np
 from matplotlib.widgets import Slider, Button
-plt.style.use('./deeplearning.mplstyle')
+plt.style.use('utils/deeplearning.mplstyle')
 
 def compute_entropy(y):
 
