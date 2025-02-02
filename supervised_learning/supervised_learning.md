@@ -206,11 +206,24 @@ S
 
 <img src="images/decision_tree.png" width=750>
 
-### Decision 1: How to choose which feature to split on each node
+#### Decision 1: How to choose which feature to split on each node
 - Maximize purity (minimize impurity)
 
-### Decision  2: When do you stop splitting?
+#### Decision  2: When do you stop splitting?
 - when a node is 100% one class
 - When splitting a node will result in the tree exceeding a maximum depth 
 - When improvements in purity score are below a threshold
 - When number of examples in a node is below a threshold
+
+### When to use:
+#### Decision Trees and Tree ensembles
+- Works well on tabular (structured) data
+- Not recommended for unstructured data (images, audio, text)
+- Fast
+- Small trees may be human interpretable
+
+#### Neural Networks:
+- Works well on all types of data ( tabular (structured) and unstructured)
+- Slower than decision tree
+- Works with transfer learning
+- Easier to string together multiple neural networks
