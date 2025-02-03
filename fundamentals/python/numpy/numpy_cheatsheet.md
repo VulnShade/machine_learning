@@ -24,6 +24,12 @@ a[:,0]      # Access column 0
 # Reshape
 a.reshape(-1, 2)        # reshape to 2 columns
 reshape(2, -1)          # reshape to 2 rows
+
+# Min value of array 
+np.argmin(distance)     # Return the index of min value in array
+
+# Shuffle
+np.random.permutation(X.shape[0])   # Randomly set indexes
 ```
 
 ### Array Operations
@@ -60,6 +66,9 @@ A_eig = np.linalg.eig(A)     # Find Eigenvalues and Eigenvectors
 
 # Linear transformations
 A @ v                       # Using matrix multiplication to calculate new vector
+
+# Distance between two vectors (L2 norm)
+np.linalg.norm(vec1 - vec2)
 
 ```
 
