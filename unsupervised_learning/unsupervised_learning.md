@@ -13,7 +13,7 @@
 
 ## 🔍 Types of Unsupervised Learning
 
-### 1. Clustering 📊
+### 1. [Clustering](clustering/README.MD) 📊
 > Groups similar data points together automatically
 
 <img src="images/cluster_ex.png" alt="cluster example" width="500"/>
