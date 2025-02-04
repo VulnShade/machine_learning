@@ -107,8 +107,7 @@
 
 ### Algorithm:
 1. Choose $n$ features $x_i$ that may be indicative of anomalous examples
-2. Fit parameters $\mu_1,..., \mu_n, \sigma^{2}_1, ..., \sigma^{2}_n$
-
+2. Fit parameters $\mu_1, 
 ### $\quad \quad \mu_j = \frac{1}{m} \sum\limits^{m}_{i=1}\vec{x}^{(i)} \quad \quad \sigma^2_j = \frac{1}{m}\sum\limits^{m}_{i=1}(x^{(i)}_j - \mu_j)^2  $
 
 3. Given new example $x$, compute $p(x)$
