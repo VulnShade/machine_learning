@@ -12,9 +12,9 @@
 
 <br>
 
-## K-mean Algorithm
+### K-mean Algorithm
 
-### Terms:
+#### Terms:
 
 
 - $c^{(i)} =$ index of cluster(1,2,..,K) to which $x^{(i)}$ is currently assigned
@@ -24,7 +24,7 @@
 <br>
 <hr>
 
-### Steps:
+#### Steps:
 1. Randomly initialize K cluster centroids
     
     $u_1, u_2, ... , u_k $
@@ -83,3 +83,12 @@
 `Often K is decided by some downstream purpose`
 
 <img src="images/tshirt_ex.png" >
+
+<br>
+<hr>
+
+## Anomaly Detection
+
+### Density estimation
+
+<img src="images/density_estimation.png" width=750>
