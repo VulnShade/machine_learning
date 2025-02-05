@@ -23,5 +23,17 @@
 - DNA microarray analysis
 - Customer segmentation
 
+<br>
+
+## [Anomaly Detection](anomaly_detection/README.md)
+> Identifies rare items, events, or observations which raise suspicions by differing significantly from the majority of the data
+
+#### Use Cases
+- Fraud detection in banking
+- Network security threat detection
+- Fault detection in manufacturing
+
+<br>
+
 ---
 💡 _Unlike supervised learning, there's no "right answer" to check against_
