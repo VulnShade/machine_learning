@@ -35,5 +35,17 @@
 
 <br>
 
+## Recommender Systems
+
+<img src="images/recommender_sys.png" width=750>
+
+#### Use case, recommend:
+- Movies
+- Merchandise
+- Restaurants
+
+
+<br>
+
 ---
 💡 _Unlike supervised learning, there's no "right answer" to check against_

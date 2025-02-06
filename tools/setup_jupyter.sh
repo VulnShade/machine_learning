@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Create a virtual environment
-python3 -m venv venv
+uv venv venv
 
 # Activate the virtual environment
 source venv/bin/activate
@@ -10,10 +10,10 @@ source venv/bin/activate
 # if [ -f requirements.txt ]; then
 #     pip install -r requirements.txt
 # else
-pip install notebook ipykernel
-pip install ipympl matplotlib numpy scikit-learn
-pip install tf-keras --no-deps
-pip install https://repo.radeon.com/rocm/manylinux/rocm-rel-6.2.3/tensorflow_rocm-2.16.2-cp310-cp310-manylinux_2_28_x86_64.whl
+uv pip install notebook ipykernel
+uv pip install ipympl matplotlib numpy scikit-learn
+uv pip install tf-keras --no-deps
+uv pip install https://repo.radeon.com/rocm/manylinux/rocm-rel-6.2.3/tensorflow_rocm-2.16.2-cp310-cp310-manylinux_2_28_x86_64.whl
 
 # fi
 
