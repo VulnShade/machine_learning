@@ -1,10 +1,12 @@
-# [Recommender Systems - Collaborative filtering](examples/recommender_systems.ipynb)
+# Recommender Systems
 
-## Per Item Features:
+## [Collaborative filtering](collaborative_filtering/collaborative_filtering.ipynb)
+
+### Per Item Features:
 
 <img src="images/per_item_fet.png" width=750>
 
-### Notation:
+#### Notation:
 - $r(i,j)$ = 1 if user j has rate moveie i (0 otherwise)
 - $y^{(i,j)}$ = rating fiven by user j on movie i (if defined)
 - $w^{(j)}, b^{(j)}$ = parameters for user j
@@ -39,13 +41,13 @@
 <br>
 <hr>
 
-### `Overall Cost function:`
+#### `Overall Cost function:`
 
 ### $$ J(w, b, x) = \frac{1}{2} \sum\limits_{(i,j):r(i,j)=1} (w^{(j)} \cdot x^{(i)} + b^{(j)} - y^{(i,j)} )^2 + \frac{\lambda}{2} \sum\limits^{n_u}_{j=1} \sum\limits^{n}_{k=1}(w_k^{(j)})^2 + \frac{\lambda}{2} \sum\limits^{n_m}_{i=1} \sum\limits^{n}_{k=1}(x_k^{(i)})^2 $$
 
 <br>
 
-## Gradient Decent
+### Gradient Decent
 
 $$ w_i^{(j)} = w_i^{(j)} - \alpha \frac{\mathcal{d}}{dw_i^{(j)}} J(w,b,x)$$
 $$ b^{(j)} = b^{(j)} - \alpha \frac{\mathcal{d}}{db^{(j)}} J(w,b,x)$$
@@ -57,19 +59,19 @@ $$ x_k^{(i)} = x_k^{(i)} - \alpha \frac{\mathcal{d}}{dx_k^{(i)}} J(w,b,x)$$
 
 
 
-## Binary Label:
+### Binary Label:
 
 <img src="images/binary_ex.png" width=750>
 
 <br>
 
-### Predict probability of $y^{(i,j) = 1}$ given by $g(w^{(j)} \cdot x^{(i)} + b^{(j)})$:
+#### Predict probability of $y^{(i,j) = 1}$ given by $g(w^{(j)} \cdot x^{(i)} + b^{(j)})$:
 
-### where: $\quad g(z) = \frac{1}{1+e^{-z}}$
+#### where: $\quad g(z) = \frac{1}{1+e^{-z}}$
 
 <br> 
 
-### Cost Function:
+#### Cost Function:
 
 #### Singles Example:
 
@@ -84,7 +86,7 @@ $$ x_k^{(i)} = x_k^{(i)} - \alpha \frac{\mathcal{d}}{dx_k^{(i)}} J(w,b,x)$$
 <br>
 <hr>
 
-## Mean Normalization
+### Mean Normalization
 
 Steps:
 1. Compute average rating for each examples
@@ -98,11 +100,16 @@ Steps:
     <br>
     <hr>
 
-    ## Finding Related Items
+### Finding Related Items
 
-    ### Find item k with $x^{(k)}$ simillar to $x^{(i)}$ (smallest distance):
+#### Find item k with $x^{(k)}$ simillar to $x^{(i)}$ (smallest distance):
 
 
-    ### $$\sum \limits^n_{l=1}(x^{(k)}_l - x^{(i)}_l)^2$$
+### $$\sum \limits^n_{l=1}(x^{(k)}_l - x^{(i)}_l)^2$$
 
-    ### $$= ||x^{(k)} - x^{(i)})||^2$$
+### $$= ||x^{(k)} - x^{(i)})||^2$$
+
+<br>
+<hr>
+
+## Content-based Filtering
