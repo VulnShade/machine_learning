@@ -1,4 +1,4 @@
-# Recommender Systems - Collaborative filtering
+# [Recommender Systems - Collaborative filtering](examples/recommender_systems.ipynb)
 
 ## Per Item Features:
 
