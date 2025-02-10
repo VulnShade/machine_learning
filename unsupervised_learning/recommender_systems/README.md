@@ -113,3 +113,17 @@ Steps:
 <hr>
 
 ## Content-based Filtering
+
+<img src="images/content-base_filtering_ex.png" width=750>
+
+<br>
+
+`Recommend items based on features of user and item to find match`
+
+#### Notation:
+- $r(i,j)$ = 1 if user j has rate moveie i (0 otherwise)
+- $y^{(i,j)}$ = rating fiven by user j on movie i (if defined)
+
+### Predict rating of user $j$ on movie $i$:
+
+### $$\underbrace{\vec{V}^{(j)}_u}_{\text{computed from }x^{(j)}_u} \cdot \underbrace{\vec{V}^{(i)}_m}_{\text{computed from }x^{(i)}_m}$$
