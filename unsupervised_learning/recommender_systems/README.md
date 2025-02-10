@@ -107,7 +107,7 @@ Steps:
 
 ### $$\sum \limits^n_{l=1}(x^{(k)}_l - x^{(i)}_l)^2$$
 
-### $$= ||x^{(k)} - x^{(i)})||^2$$
+### $$= ||x^{(k)} - x^{(i)}||^2$$
 
 <br>
 <hr>
@@ -127,3 +127,20 @@ Steps:
 ### Predict rating of user $j$ on movie $i$:
 
 ### $$\underbrace{\vec{V}^{(j)}_u}_{\text{computed from }x^{(j)}_u} \cdot \underbrace{\vec{V}^{(i)}_m}_{\text{computed from }x^{(i)}_m}$$
+
+<br>
+
+### Neural network architecture
+`Networks must have same number output layer`
+
+<img src="images/cbf_nn.png" width=750>
+
+<br>
+
+<img src="images/cbf_nn_2.png" width=500>
+
+<br>
+
+- $\vec{V}^{(j)}_u \cdot \vec{V}^{(i)}_m$ - For number prediction
+- $g(\vec{V}^{(j)}_u \cdot \vec{V}^{(i)}_m)$ - For classification
+
