@@ -1,5 +1,20 @@
 # Recommender Systems
 
+## Table of Contents
+- [Collaborative Filtering](#collaborative-filtering)
+  - [Per Item Features](#per-item-features)
+  - [Cost Function](#cost-function)
+  - [To Learn Features](#to-learn-features-if-none-are-available)
+  - [Overall Cost Function](#overall-cost-function)
+  - [Gradient Decent](#gradient-decent)
+  - [Binary Label](#binary-label)
+  - [Mean Normalization](#mean-normalization)
+  - [Finding Related Items](#finding-related-items)
+- [Content-based Filtering](#content-based-filtering)
+  - [Neural Network Architecture](#neural-network-architecture)
+  - [Cost Function](#cost-function-1)
+  - [Retrieval & Ranking](#retrieval--ranking)
+
 ## [Collaborative filtering](collaborative_filtering/collaborative_filtering.ipynb)
 
 ### Per Item Features:
@@ -112,7 +127,7 @@ Steps:
 <br>
 <hr>
 
-## Content-based Filtering
+## [Content-based Filtering](content-based_filtering/conten-based_filtering.ipynb)
 
 <img src="images/content-base_filtering_ex.png" width=750>
 
@@ -144,3 +159,31 @@ Steps:
 - $\vec{V}^{(j)}_u \cdot \vec{V}^{(i)}_m$ - For number prediction
 - $g(\vec{V}^{(j)}_u \cdot \vec{V}^{(i)}_m)$ - For classification
 
+<br>
+
+### Cost Function
+
+### $$ J = \sum \limits_{(i,j):r(i,j)=1}(\vec{v}^{(j)}_u \cdot \vec{v}^{(i)}_m -y^{(i,j)})^2 + \text{NN regulatization term}$$
+
+<br>
+
+### To find movies similar to movie $i$:
+
+### $$||\vec{V}^{(k)}_m - \vec{V}^{(i)}_m||^2$$
+
+<br>
+
+### Retrieval & Ranking
+
+#### Retrieval:
+- Generate large list of plausible item candidates
+    1. Find 10 most similar movies to last 10 watched by user
+    2. For 3 most viewed genres, find top 10 movies
+    3. Top 20 movies in the country
+- Combine retreieved items into list, remove duplicates and items already watched/purchased 
+
+#### Ranking:
+- Take list retrieved and rank using learned model
+- Display ranked items to user
+
+<br>
