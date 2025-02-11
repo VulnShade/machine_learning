@@ -25,7 +25,7 @@
 
 <br>
 
-## [Anomaly Detection](anomaly_detection/README.md)
+### 2. [Anomaly Detection](anomaly_detection/README.md)
 > Identifies rare items, events, or observations which raise suspicions by differing significantly from the majority of the data
 
 #### Use Cases
@@ -35,7 +35,7 @@
 
 <br>
 
-## Recommender Systems
+### 3. [Recommender Systems](recommender_systems/README.md)
 
 <img src="images/recommender_sys.png" width=750>
 
@@ -43,6 +43,25 @@
 - Movies
 - Merchandise
 - Restaurants
+
+
+<br>
+
+### 4. Principal Component Analysis
+> Reduces number of features for visualization
+
+<img src="images/pca_ex.png" width=500>
+
+- Find new axis and coordinates
+- Use fewer numbers (ex. capture size from length & height)
+
+<br>
+
+#### Algorithm:
+1. Normalize to have zero mean
+2. Apply feature scaling
+3. Choose an axis (z axis)
+4. Project onto z (find axis with highest variance)
 
 
 <br>
