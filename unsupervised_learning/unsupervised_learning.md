@@ -48,7 +48,7 @@
 <br>
 
 ### 4. Principal Component Analysis
-> Reduces number of features for visualization
+> Reduces number of features for visualization (2 or 3 features)
 
 <img src="images/pca_ex.png" width=500>
 
@@ -58,10 +58,13 @@
 <br>
 
 #### Algorithm:
-1. Normalize to have zero mean
-2. Apply feature scaling
-3. Choose an axis (z axis)
-4. Project onto z (find axis with highest variance)
+1. Normalize to have zero mean (feature scaling)
+2. Choose an axis (z axis)
+3. Project onto z (find axis with highest variance)
+
+#### Coordinate on new axis
+
+<img src="images/pca_coord.png" width=500>
 
 
 <br>
