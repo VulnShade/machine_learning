@@ -3,7 +3,7 @@
 
 <br>
 
-## Basics
+## Basics (Markov Decision Process)
 $\text{state }s \longrightarrow \text{action }a  $
 
 $ \text{position of helicopter } \longrightarrow \text{how to move control sticks } $
@@ -20,3 +20,37 @@ $\bullet \text{ negative reward: crash } - 1000$
 
 ### Return $ = R_1 + \gamma R_2 + \gamma^2 R_3 + ...$ terminal state 
 #### Discount Factor $\gamma = 0.9$ (commonly a number close to 1)
+
+<br>
+
+## Policy
+
+<img src="images/policy.png" width=750>
+
+>### Goal: <span style="font-weight: normal;"> Find policy </span>$\pi$ <span style="font-weight: normal;">that tells action</span> $(a = \pi(s))$ <span style="font-weight: normal;">to take in ever state (s) to maximize the return </span>
+
+<br>
+
+## State action value function (Q-function)
+
+>Gives the return
+
+$Q^{*}$ = Optimal $Q$ function
+
+$Q(s,a) = $ Return if you:
+
+- Start in state $s$
+- Take action $a$ once
+- Behave optimally after that
+
+<br>
+
+<img src="images/sav_func.png" width=750>
+
+
+
+>#### Best possible return from state $s$ is $\max\limits_{a}Q(s,a)$ 
+
+>#### Best possible action from state $s$ is the action $a$ that gives $\max\limits_{a}Q(s,a)$ 
+
+<img src="images/q_func.png" width=500>
