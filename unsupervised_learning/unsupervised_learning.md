@@ -44,10 +44,24 @@
 - Merchandise
 - Restaurants
 
+<br>
+
+### 4. Reinforcement Learning
+
+$$\text{state }s \longrightarrow \text{action }a  $$
+
+$$ \text{position of helicopter } \longrightarrow \text{how to move control sticks } $$
+
+$\text{reward function}: \\$
+$\bullet \text{ positive reward: flying well } +1 \\$
+$\bullet \text{ negative reward: crash } - 1000$
+
+<img src="images/reinformcement_ex.png" width>
+
 
 <br>
 
-### 4. Principal Component Analysis
+## Principal Component Analysis
 > Reduces number of features for visualization (2 or 3 features)
 
 <img src="images/pca_ex.png" width=500>

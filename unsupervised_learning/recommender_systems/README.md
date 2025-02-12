@@ -1,4 +1,5 @@
 # Recommender Systems
+[← Back to Main Page](../../README.md) | [← Back to Unsupervised Learning](../unsupervised_learning.md)
 
 ## Table of Contents
 - [Collaborative Filtering](#collaborative-filtering)
