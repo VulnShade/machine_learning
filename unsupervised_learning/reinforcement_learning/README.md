@@ -111,3 +111,63 @@ y\\[4mm]
 \end{array}
 \end{array}
 $$
+
+<br>
+
+<hr>
+
+
+## Lunar Lander 
+<br>
+
+<div style="display:flex;align-items:center;justify-content: center;">
+    <img src="images/lunar_lander.png">
+</div>
+
+<br>
+
+$$
+\ S \text{ (State) }=
+\begin{array}{rl}
+\left[\begin{array}{c}
+x\\[4mm]
+\dot{x}\\[4mm]
+y\\[4mm]
+\dot{y}\\[4mm]
+\theta\\[4mm]
+\dot{\theta}\\[4mm]
+l\\[4mm]
+r
+\end{array}\right]
+
+&
+\begin{array}{l}
+\quad\ x \text{ position }\\[4mm]
+\quad\ \text{ velocity in x direction }\\[4mm]
+\quad\ y \text{ position }\\[4mm]
+\quad\text{ velocity in y direction }\\[4mm]
+\quad\ \text{ velocity in y direction }\\[4mm]
+\quad\ \text{ velocity of orientation change }\\[4mm]
+\quad\ \text{ left foot on ground }\\[4mm]
+\quad\  \text{ right foot on ground }
+\end{array}
+\end{array}
+$$
+
+#### Actions:
+- do nothing
+- left thruster
+- main thruster
+- rigth thruster
+
+<br>
+
+### Reward Function
+- Getting to landing pad: +100-140 (depending on being centered)
+- Reward for moving toward/away pad
+- Crash: -100
+- Soft landing: +100
+- Leg grounded: +10
+- Fire main engine: -0.3 -> penalize gas consumption 
+- Fire side thruster: -0.03 -> ^
+
