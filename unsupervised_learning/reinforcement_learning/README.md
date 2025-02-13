@@ -162,7 +162,7 @@ $$
 
 <br>
 
-### Reward Function
+### Reward Function:
 - Getting to landing pad: +100-140 (depending on being centered)
 - Reward for moving toward/away pad
 - Crash: -100
@@ -170,4 +170,37 @@ $$
 - Leg grounded: +10
 - Fire main engine: -0.3 -> penalize gas consumption 
 - Fire side thruster: -0.03 -> ^
+<br>
 
+### Bellman Equation:
+
+<img src="images/lunar_bellman.png" width=750>
+
+### Learning Algorithm:
+1. Initialize neural network randomly as guess of $Q(s,a)$
+2. Repeat { <br>
+    - Take actions in the lunar land. Get $(s,a,R(s),s\prime)$ <br>
+    - Store 10,00 most recent $(s,a,R(s),s\prime)$ tuple (Replay Bufffer) <br>}
+3. Train neural network: <br>
+   - Create training set of 10,00 example using <br>
+    $x = (s,a)$ and $y=R(s) + \lambda \max \limits_{a\prime}Q(s\prime, a\prime)$
+    - Train $Q_{new}$ such that $Q_{new}(s,a) \approx y$
+4. Set $Q = Q_{new}$
+
+<br>
+
+### Deep Reinforcement Learning:
+<img src="images/deep_reinforcement.png" width=750>
+
+<br>
+
+### Epsilon Greedy Policy:
+#### $\epsilon$ - greedy policy ($\epsilon = 0.05$)
+- With probability 0.95, pick action $a$ that maximizes $Q(s,a)$ (Greedy action).
+- With probability 0.05, pick an action $a$ randomly (exploration)
+    - Learn about 
+
+<br>
+
+> Common practice to start $\epsilon$ high and gradually decrease
+- For better training on actions
