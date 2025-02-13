@@ -73,3 +73,41 @@ $Q(s,a) = $ Return if you:
 <br>
 
 <img src="images/bellman_eq.png" width=500>
+
+## Stochastic Environment
+
+<img src="images/stochastic_env.png" width=500>
+
+- 90% chance robot takes correct path
+- 10% chance robot takes wrong path 
+
+<br>
+
+## Continuous State
+- `Discrete State` : One of a infinte set of positions
+- `Continuous State` : Infinite state space
+
+<br>
+
+$$
+\ S \text{ (State) }=
+\begin{array}{rl}
+\left[\begin{array}{c}
+x\\[4mm]
+y\\[4mm]
+\theta\\[4mm]
+\dot{x}\\[4mm]
+\dot{y}\\[4mm]
+\dot{\theta}
+\end{array}\right]
+&
+\begin{array}{l}
+\quad\ x \text{ position }\\[4mm]
+\quad\ y \text{ position }\\[4mm]
+\quad\ \theta \text{ orientation }\\[4mm]
+\quad\ \dot{x} \text{ velocity in x direction }\\[4mm]
+\quad\ \dot{y} \text{ velocity in y direction }\\[4mm]
+\quad\ \dot{\theta} \text{ velocity of orientation change }
+\end{array}
+\end{array}
+$$
