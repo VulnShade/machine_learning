@@ -54,3 +54,22 @@ $Q(s,a) = $ Return if you:
 >#### Best possible action from state $s$ is the action $a$ that gives $\max\limits_{a}Q(s,a)$ 
 
 <img src="images/q_func.png" width=500>
+
+<br>
+
+## Bellman Equation
+
+#### Notation:
+- $s$ : current state
+- $a$ : current action
+- $R(s)$ : reward of urrent state
+- $s\prime$ : state you get to after action $a$
+- $a\prime$ : action you take in state $s\prime$
+
+### $$Q(s,a) = \underbrace{R(s)}_{\text{immediate reward}} + \underbrace{\gamma \max\limits_{a\prime}Q(s\prime, a\prime)}_{\text{return from behaving optimally from state } s\prime} $$ 
+
+### $$Q(s,a) = R(s) \text{ - if in terminal state}$$
+
+<br>
+
+<img src="images/bellman_eq.png" width=500>
