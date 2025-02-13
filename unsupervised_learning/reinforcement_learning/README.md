@@ -204,3 +204,28 @@ $$
 
 > Common practice to start $\epsilon$ high and gradually decrease
 - For better training on actions
+
+### Mini-batchGradient Decent:
+
+
+<table>
+    <tr>
+        <td><img src="images/mini-batch.png" ></td>
+        <td><img src="images/mb_gd.png" ></td>
+    </tr>
+</table>
+<br>
+
+- Each iteration only looks at subset of training data
+- Each itereation much more computationaly inexpensive 
+
+<br>
+
+### Soft Update:
+
+
+<img src="images/soft_update.png" width=750>
+
+<br>
+
+> Sets W & B to be mostly previous values for more gradual changes
