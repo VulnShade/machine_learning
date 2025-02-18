@@ -6,4 +6,13 @@
 1. `Brain (AI Model)` - Handles reasoning and planning. Decides which action to take based on situation
 2. `Body (Capabilities and tools)` - what Agent is equipped to do
 
-            
+
+#### LLMs:
+
+> Objective is to predict next token, given sequence of previous tokens
+
+<img src="images/models.png">
+
+<br>
+
+`token` - unity of information (word or part of a word)
