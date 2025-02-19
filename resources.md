@@ -17,6 +17,10 @@
   - Practical applications
   - Foundation building
 
+### [Hugging Face](https://huggingface.co/learn)
+
+- **Agents Course**
+
 ## 📖 Books & References
 
 ### [Introduction to Statistical Learning](https://www.statlearning.com/)
