@@ -4,3 +4,4 @@ __pycache__/
 test.py
 *.venv/
 supervised_learning/neural_networks/simple_implementation/.venv/
+.env

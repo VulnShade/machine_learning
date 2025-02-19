@@ -1,4 +1,5 @@
 # Agents
+[← Back to Main Page](../README.md)
 
 > An Agent is a system that leverages an AI model to interact with its environment in order to achieve a user-defined objective. It combines reasoning, planning, and the execution of actions (often via external tools) to fulfill tasks.
 
@@ -195,3 +196,15 @@ First, I need to call the weather API to get up-to-date details.”
     ```
 4. `Observation`: Current weather in New York: partly cloudy, 15°C, 60% humidity
 5. Repeat cycyle with new information until reaching final answer
+
+<br>
+<hr>
+
+## Actions
+> Steps an AI agent takes to interact with its environment
+
+### Types of Agent Actions:
+
+<img src="images/actions.png">
+
+## [smolagents Implementation](smolagents/README.md)
