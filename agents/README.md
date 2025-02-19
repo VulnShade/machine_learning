@@ -79,4 +79,119 @@ rendered_prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_ge
 <br>
 <hr>
 
-## tools
+## Tools
+
+> Function given to the LLM
+1. The agent parses LLM output
+2. Recognizes tool Call
+3. Invokes tool on LLM behalf
+4. Sends tool output to llm for final response
+
+#### Common Tools
+
+<img src="images/tools.png">
+
+#### Tool should contain:
+- A textual description of what the function does
+- A Callable (something to perform an action)
+- Arguments with typings
+- (Optional) Outputs with typings
+
+
+### Creating and passing tools
+
+<details>
+
+<summary>Tool Decorator</summary>
+
+```python
+def tool(func):
+    """
+    A decorator that creates a Tool instance from the given function.
+    """
+    # Get the function signature
+    signature = inspect.signature(func)
+    
+    # Extract (param_name, param_annotation) pairs for inputs
+    arguments = []
+    for param in signature.parameters.values():
+        annotation_name = (
+            param.annotation.__name__ 
+            if hasattr(param.annotation, '__name__') 
+            else str(param.annotation)
+        )
+        arguments.append((param.name, annotation_name))
+    
+    # Determine the return annotation
+    return_annotation = signature.return_annotation
+    if return_annotation is inspect._empty:
+        outputs = "No return annotation"
+    else:
+        outputs = (
+            return_annotation.__name__ 
+            if hasattr(return_annotation, '__name__') 
+            else str(return_annotation)
+        )
+    
+    # Use the function's docstring as the description (default if None)
+    description = func.__doc__ or "No description provided."
+    
+    # The function name becomes the Tool name
+    name = func.__name__
+    
+    # Return a new Tool instance
+    return Tool(
+        name=name, 
+        description=description, 
+        func=func, 
+        arguments=arguments, 
+        outputs=outputs
+    )
+```
+</details>
+<br>
+
+#### Tool example:
+
+```python
+@tool
+def calculator(a: int, b: int) -> int:
+    """Multiply two integers."""
+    return a * b
+
+print(calculator.to_string())
+```
+
+<br>
+
+> Use .to_string() output in the system prompts
+
+<img src="images/tool_sys_pr.png">
+
+<br>
+<hr>
+
+## Thought-Action-Observation
+
+1. `Thought`: The LLM part of the Agent decides what the next step should be.
+2. `Action`: The agent takes an action, by calling the tools with the associated arguments.
+3. `Observation`: The model reflects on the response from the tool.
+
+<img src="images/th-act-obs.png">
+
+1. A user asks : “What’s the weather like in New York today?”
+2. `Thought`: The user needs current weather information for New York. I have access to a tool that fetches weather data. 
+First, I need to call the weather API to get up-to-date details.”
+
+3. ``Action`: 
+
+    ```json
+    {
+        "action": "get_weather",
+        "action_input": {
+        "location": "New York"
+        }
+    }
+    ```
+4. `Observation`: Current weather in New York: partly cloudy, 15°C, 60% humidity
+5. Repeat cycyle with new information until reaching final answer
