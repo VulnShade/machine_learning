@@ -82,5 +82,29 @@ f = np.dot(w,x) + b          # vectorize implementation of LR model prediction
 np.exp(input_array)         # Caclulate exponential e^z (input array z)
 ```
 
+### Calculus
+
+Numpy
+```python
+# Values are not exact
+
+x_array_2 = np.linspace(-5, 5, 100)
+dfdx_numerical = np.gradient(f(x_array_2), x_array_2)       # Calculate derivatives
+```
+
+JAX
+```python
+from jax import grad, vmap
+import jax.numpy as jnp
+
+x_array_jnp = jnp.array([1., 2., 3.])       # create array
+y_array_jnp = x_array_jnp.at[2].set(4.0)    # Change value of element
+
+# Differentiation
+dfdx_jax_vmap = vmap(grad(f))(x_array_jnp)  
+
+```
+
+
 ---
 💡 _This cheatsheet provides quick reference for common NumPy operations used in machine learning_

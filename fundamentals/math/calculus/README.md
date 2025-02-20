@@ -29,18 +29,19 @@
 
 ### Common Derivatives:
 
-| $f(x)$| $\quad f^{\prime}(x)$|
-|-------|----------------|
-|$y = mx + b$| $\quad m$ |
-|$ y = x^n$ | $\quad nx^{n-1}$|
-|Inverse $g(x)$| $\quad g^{\prime}(y) = \frac{1}{f^{\prime}(x)}$|
-|$sin(x)$ | $\quad cos(x)$ |
-|$cos(x)$ | $\quad -sin(x)$|
-| $e^x$ | $\quad e^x$ |
-| $log(x)$| $\quad \frac{1}{x}$ |
-| $y = cf(x)$ |  $\quad cf^{\prime}(x)$ | 
-| $f = g + h $ | $\quad f^{\prime} = g^{\prime} + h^{\prime}$ |
-| $f = gh $ | $\quad f^{\prime} = g^{\prime}h = gh^{\prime}$
+|Rule Name| $f(x)$| $\quad f^{\prime}(x)$|
+|---------|-------|----------------------|
+||$mx + b$| $\quad m$ |
+||$ x^n$ | $\quad nx^{n-1}$|
+||Inverse $g(x)$| $\quad g^{\prime}(y) = \frac{1}{f^{\prime}(x)}$|
+||$sin(x)$ | $\quad cos(x)$ |
+||$cos(x)$ | $\quad -sin(x)$|
+|| $e^x$ | $\quad e^x$ |
+|| $log(x)$| $\quad \frac{1}{x}$ |
+|Scalar| $cf(x)$ |  $\quad cf^{\prime}(x)$ | 
+|Sum | $g + h $ | $\quad g^{\prime} + h^{\prime}$ |
+|Product| $gh $ | $\quad g^{\prime}h = gh^{\prime}$|
+|Chain |$g(h(t))$| $\quad g^{\prime}(h(t)) \cdot h^{\prime}(t)$|
 
 
 

@@ -26,7 +26,7 @@
    - Matrices and Vectors
    - Linear Transformations
 2. Statistics
-3. Calculus
+3. [Calculus](math/calculus/README.md)
 
 ## 🔧 Tools & Libraries
 1. NumPy
