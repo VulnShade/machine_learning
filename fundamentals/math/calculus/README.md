@@ -44,5 +44,32 @@
 |Chain |$g(h(t))$| $\quad g^{\prime}(h(t)) \cdot h^{\prime}(t)$|
 
 
+<hr>
+<br>
 
 
+### The Square Loss
+> Minimize $(x-a_1)^2 + (x-a_2)^2 + ... + (x-a_n)^2$
+
+1. Set derivative = 0 
+
+$$ 
+\frac{d}{dx}[(x-a_1)^2 + (x-a_2)^2 + (x-a_3)^2] = 0 \\[2em]
+
+2(x-a) + 2(x - b) + 2(x - c) = 0 \\[2em]
+
+(x-a) + (x-b) + (x-c) = 0 
+$$
+
+2. Solve for x
+
+$$
+x = \frac{a + b + b}{3}
+$$
+
+<br>
+
+### $$\text{Generally: } x = \frac{a_1 + a_2 + ... + a_n}{n}$$
+
+<hr>
+<br>
