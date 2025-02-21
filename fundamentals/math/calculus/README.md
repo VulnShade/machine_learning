@@ -73,3 +73,11 @@ $$
 
 <hr>
 <br>
+
+## Partial Derivatives
+
+### $ f(x,y) = x^2 + y^2$
+
+### $ \frac{\partial f}{\partial x} = 2x + 0 \qquad  $  y is treated as a constant
+
+### $ \frac{\partial f}{\partial y} = 0 + 2y \qquad  $  x is treated as a constant
