@@ -40,7 +40,7 @@
 || $log(x)$| $\quad \frac{1}{x}$ |
 |Scalar| $cf(x)$ |  $\quad cf^{\prime}(x)$ | 
 |Sum | $g + h $ | $\quad g^{\prime} + h^{\prime}$ |
-|Product| $gh $ | $\quad g^{\prime}h = gh^{\prime}$|
+|Product| $gh $ | $\quad g^{\prime}h + gh^{\prime}$|
 |Chain |$g(h(t))$| $\quad g^{\prime}(h(t)) \cdot h^{\prime}(t)$|
 
 
@@ -81,3 +81,17 @@ $$
 ### $ \frac{\partial f}{\partial x} = 2x + 0 \qquad  $  y is treated as a constant
 
 ### $ \frac{\partial f}{\partial y} = 0 + 2y \qquad  $  x is treated as a constant
+
+### To find minimum:
+1. Set each partial derivative = 0
+2. Solnve the set of linear equations
+3. determine if critical point is minimum
+
+<br>
+<hr>
+
+### Gradient Decent
+
+New point = old point - learning rate * slope
+
+### $x_1 = x_0 - \alpha f^{\prime}(x_0)$
