@@ -95,3 +95,23 @@ $$
 New point = old point - learning rate * slope
 
 ### $x_1 = x_0 - \alpha f^{\prime}(x_0)$
+
+<br>
+<hr>
+
+## Newtons Method
+> - Alternative method to gradient descent.
+> - Finds zeros. Can be used for optimization.
+
+<img src="images/newtons_method.png" width=750>
+
+<br>
+
+### Steps:
+> Newton's method finds zeros of f(x).<br>
+> To set for optimization: Set $f(x) \rightarrow g^{\prime}(x)$ and $f^{\prime}(x) \rightarrow (g^{\prime}(x))^{\prime}$
+
+1. Start with some $x_0$
+2. update:
+
+### $$ x_{k+1} = x_k - \frac{g^{\prime}(x_k)}{(g^{\prime}(x_k))^{\prime}} $$
