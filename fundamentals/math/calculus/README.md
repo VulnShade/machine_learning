@@ -115,3 +115,29 @@ New point = old point - learning rate * slope
 2. update:
 
 ### $$ x_{k+1} = x_k - \frac{g^{\prime}(x_k)}{(g^{\prime}(x_k))^{\prime}} $$
+
+<br>
+
+### Hessian
+<img src="images/hessian.png" width=750>
+
+<br>
+
+1. Take partial derivative with respect to x then y
+2. Take partial derivative of each of those with respect to x and then y
+
+<br>
+
+Example:
+
+<img src="images/hessian_matrix.png" width=750>
+
+#### Checking if maximum or minimum
+
+<img src="images/concave_up.png" width=500>
+
+<img src="images/concave_down.png" width=500>
+
+<img src="images/saddle.png" width=500>
+
+<img src="images/min_max.png" width=500>
