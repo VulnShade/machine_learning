@@ -4,10 +4,15 @@
 
 > Quick reference for essential calculus concepts
 
-
 ## 📋 Contents
 - [Derivatives](#-derivatives)
-
+  - [Common Derivatives](#common-derivatives)
+  - [The Square Loss](#the-square-loss)
+- [Partial Derivatives](#partial-derivatives)
+  - [Gradient Decent](#gradient-decent)
+- [Newtons Method](#newtons-method)
+  - [Hessian](#hessian)
+  - [Newton's Method with 2+ variables](#newtons-method-with-2-variables)
 
 ## 📊 Derivatives
 
@@ -141,3 +146,9 @@ Example:
 <img src="images/saddle.png" width=500>
 
 <img src="images/min_max.png" width=500>
+
+<br>
+
+### Newton's Method with 2+ variables:
+
+<img src="images/newton_2var.png" width=750 >
