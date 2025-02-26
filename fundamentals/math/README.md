@@ -10,7 +10,7 @@
    - Systems of Equations
    - Matrix Rank
    - Vectors
-2. Statistics (coming soon)
+2. [Statistics](prob_stats/README.md)
 3. [Calculus](calculus/README.md)
 
 ---
