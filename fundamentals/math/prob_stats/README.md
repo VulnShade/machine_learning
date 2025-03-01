@@ -18,6 +18,4 @@
 | Sum (Non exclusive)| $P(A \cup B) = P(A) + P(B) - P(A \cap B) $ | Proability of A or B - (A & B) |
 | Product | $P(A \cap B) = P(A) \cdot P(B) $ | Independent events |
 | Conditional | $P(A \cap B) = P(A) \cdot P(B \| A) $| Dependent events |
-| Bayes Theorem | $ P(B \| A) = \frac{P(A \cap B)}{P(A)} $  | 
-
-
+| Bayes Theorem | $ P(A \| B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A) \cdot P(B \| A)}{P(B)}$   | 
