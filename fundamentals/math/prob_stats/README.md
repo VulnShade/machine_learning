@@ -19,3 +19,27 @@
 | Product | $P(A \cap B) = P(A) \cdot P(B) $ | Independent events |
 | Conditional | $P(A \cap B) = P(A) \cdot P(B \| A) $| Dependent events |
 | Bayes Theorem | $ P(A \| B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A) \cdot P(B \| A)}{P(B)}$   | 
+
+<br>
+
+## Binomial Distribution (Discrete Distributions)
+
+<img src="images/binomial_dist.png" width=750>
+
+$$\begin{pmatrix} 
+n \\
+k
+\end{pmatrix}  \text{ex. all combinations for landing }k \text{ heads in } n \text { coin tosses}$$ 
+
+
+#### Event: X = X: X heads in 6 tosses:
+### $ \underbrace{\begin{pmatrix}5 \\x\end{pmatrix}}_{\text{All possible orders}}\cdot\overbrace{p^x}^{\text{Prob. of x heads}}\cdot\underbrace{(1-p)^{5-x}}_{\text{Prob. seeing 5-x tails}}$
+
+<br>
+
+$$\begin{pmatrix} 
+n \\
+k
+\end{pmatrix} n \ choose \ k \ = \frac{n!}{(n-k)!K!}$$ 
+
+$$ \text{Ordered sets of length }k \rightarrow \text{Unordered sets of length }k $$
