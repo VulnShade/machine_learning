@@ -22,7 +22,9 @@
 
 <br>
 
-## Binomial Distribution (Discrete Distributions)
+## Distributions
+
+### Binomial Distribution (Discrete Distributions)
 
 <img src="images/binomial_dist.png" width=750>
 
@@ -43,3 +45,22 @@ k
 \end{pmatrix} n \ choose \ k \ = \frac{n!}{(n-k)!K!}$$ 
 
 $$ \text{Ordered sets of length }k \rightarrow \text{Unordered sets of length }k $$
+
+<br>
+
+### Continuous Distribution
+
+<img src="images/continuous_dist.png" width=750>
+
+<img src="images/pdf.png" width=750>
+
+<img src="images/cdf.png" width=750>
+
+<br>
+
+### Normal (Gaussian) Distribution
+
+<img src="images/normal_dist.png" width=750>
+
+
+
