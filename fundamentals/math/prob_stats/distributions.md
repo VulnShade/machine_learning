@@ -38,7 +38,11 @@ def median(data_set):
 
 <br>
 
-### $$Var(X) = \Epsilon[X - \Epsilon[X]^2] $$
+### $$Var(X) = \Epsilon[(X - \Epsilon[X])^2] $$
+
+### $$= \Epsilon[X^2] - \Epsilon[X]^2$$
+
+$$Var(aX + b) = a^2Var(X)$$
 
 1. Find X's mean
 2. Find deviation from that mean for every value of X
