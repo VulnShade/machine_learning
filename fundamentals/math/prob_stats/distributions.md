@@ -1,4 +1,5 @@
 # Distributions
+[← Back to Main Page](../../../README.md) | [← Back to Probability & Statistics](README.md)
 
 ## Measures
 
@@ -27,3 +28,19 @@ def median(data_set):
 
 ### Mode
 > Value(s) with highest probability or frequency
+
+<br>
+
+### Variance
+> Measuring spread
+
+<img src="images/variance.png" />
+
+<br>
+
+### $$Var(X) = \Epsilon[X - \Epsilon[X]^2] $$
+
+1. Find X's mean
+2. Find deviation from that mean for every value of X
+3. Square those deviations
+4. Average those squared deviations
