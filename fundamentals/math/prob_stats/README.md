@@ -22,7 +22,7 @@
 
 <br>
 
-## Distributions
+## [Distributions](distributions.md)
 
 ### Binomial Distribution (Discrete Distributions)
 
