@@ -3,7 +3,7 @@
 
 ## Measures
 
-### Mean ( Expected value)
+### Mean ($\mu$) ( Expected value)
 
 <img src="images/mean.png" width=750>
 
@@ -40,6 +40,8 @@ def median(data_set):
 
 ### $$Var(X) = \Epsilon[(X - \Epsilon[X])^2] $$
 
+### $$= \Epsilon[(X - \mu)^2] $$
+
 ### $$= \Epsilon[X^2] - \Epsilon[X]^2$$
 
 $$Var(aX + b) = a^2Var(X)$$
@@ -48,3 +50,16 @@ $$Var(aX + b) = a^2Var(X)$$
 2. Find deviation from that mean for every value of X
 3. Square those deviations
 4. Average those squared deviations
+
+<br>
+
+### Standard Deviation ($\sigma$)
+
+![alt text](<Screenshot 2025-03-09 163302.png>)
+
+### $$ std(x) = \sqrt{Var(x)}$$
+
+#### 68-95-99.7 rule:
+- 68% within 1 $\sigma$ of mean
+- 95% within 2 $\sigma$
+- 99.7% within 3 $\sigma$
