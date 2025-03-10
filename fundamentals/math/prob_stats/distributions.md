@@ -17,6 +17,8 @@
 
 ### Mean ($\mu$) ( Expected value)
 
+### $$ \mu = \frac{\text{sum of data points}}{\text{Num of data points}}$$
+
 <img src="images/mean.png" width=750>
 
 - Mean or balancing point
@@ -67,7 +69,7 @@ $$Var(aX + b) = a^2Var(X)$$
 
 ### Standard Deviation ($\sigma$)
 
-![alt text](<Screenshot 2025-03-09 163302.png>)
+<img src="images/std_dev.png">
 
 ### $$ std(x) = \sqrt{Var(x)}$$
 
@@ -104,6 +106,34 @@ $$Var(aX + b) = a^2Var(X)$$
 <img src="images/kurtosis.png" width=750>
 
 <br>
+
+### Covariance 
+
+### $$ Cov(X,Y) = \frac{\sum(x_i - \mu_x)(y_i - \mu_y)}{n} $$
+
+<img src="images/covariance.png">
+
+### Covariance of Probability Distributions:
+
+### $$ Cov(X,Y) = \sum P_{XY}(x_i, y_i)(x_i - \mu_x)(y_i - \mu_y) $$
+
+$$ = \Epsilon[XY] -\Epsilon[X]\Epsilon[Y] $$
+
+<br>
+
+### Correlation Coefficient
+> [-1,1]
+
+<img src="images/correlation_coefficient.png">
+
+- -1 - completely negatively correlated
+- 0 - completely independent
+- 1 - completely positively correlated
+
+### $$ \text{correlation coefficiaent } = \frac{Cov(X,Y)}{\sigma_x \cdot \sigma_y} $$
+
+
+<br>
 <hr>
 
 ## Standardizing Distribution
@@ -115,3 +145,15 @@ $$Var(aX + b) = a^2Var(X)$$
 
 ### $$ X \rightarrow \frac{X}{\sigma}$$
 
+<br>
+
+<hr>
+
+## Joint Distributions
+
+### $$ P_{XY} = P(X=x, Y=y) = P(x) \cdot P(y) $$
+
+
+X = num of first die, Y = num second die
+
+<img src="images/discrete_joint_dist.png">
