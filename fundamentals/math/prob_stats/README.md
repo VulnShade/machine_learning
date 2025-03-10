@@ -62,5 +62,3 @@ $$ \text{Ordered sets of length }k \rightarrow \text{Unordered sets of length }k
 
 <img src="images/normal_dist.png" width=750>
 
-
-
