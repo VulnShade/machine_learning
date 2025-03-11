@@ -3,6 +3,15 @@
 
 <br>
 
+## Prob & Stats
+
+```python
+df.describe()   # shows common stats of data
+df.corr()       # correlation matrix 
+
+```
+
+
 ## One hot encoding for categorical data
 ```python 
 cat_variables = ['column1_name', 

@@ -11,7 +11,10 @@
   - [Moments of a Distribution](#moments-of-a-distribution)
     - [Skewness](#skewness)
     - [Kurtosis](#kurtosis)
+  - [Covariance](#covariance)
+  - [Correlation Coefficient](#correlation-coefficient)
 - [Standardizing Distribution](#standardizing-distribution)
+- [Joint Distributions](#joint-distributions)
 
 ## Measures
 
