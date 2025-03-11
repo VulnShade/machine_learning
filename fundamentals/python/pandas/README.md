@@ -1,6 +1,20 @@
 # Pandas Cheatsheet
 [← Back to Main Page](../../../README.md) | [← Back to Fundamentals](../../README.md)
 
+
+## Basics
+
+```python
+# Load Data
+df = pd.read_csv(my_csv.csv)
+
+# Selecting data
+df.head()           # View first lines
+df[df['tip'] > 0]   # select values in column of certain value
+
+```
+
+
 <br>
 
 ## Prob & Stats

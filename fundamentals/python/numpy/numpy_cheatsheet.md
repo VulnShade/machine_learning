@@ -106,5 +106,7 @@ dfdx_jax_vmap = vmap(grad(f))(x_array_jnp)
 ```
 
 
+
+
 ---
 💡 _This cheatsheet provides quick reference for common NumPy operations used in machine learning_
