@@ -18,7 +18,9 @@
 
 ## Measures
 
-### Mean ($\mu$) ( Expected value)
+### Mean ( Expected value)
+#### $\mu$ - Population mean, $\bar{x}$ - Sample mean 
+
 
 ### $$ \mu = \frac{\text{sum of data points}}{\text{Num of data points}}$$
 
@@ -57,7 +59,7 @@ def median(data_set):
 
 ### $$Var(X) = \Epsilon[(X - \Epsilon[X])^2] $$
 
-### $$= \Epsilon[(X - \mu)^2] $$
+### $$= \Epsilon[(X - \mu)^2] =  \frac{1}{N}\sum(x - \mu)^2$$ 
 
 ### $$= \Epsilon[X^2] - \Epsilon[X]^2$$
 

@@ -71,3 +71,28 @@ $$ \text{Ordered sets of length }k \rightarrow \text{Unordered sets of length }k
 
 <img src="images/normal_dist.png" width=750>
 
+<br>
+<hr>
+
+## Population and Samples
+
+### Proportion
+
+#### Population Proportion:
+
+### $$ p = \frac{\text{number items with characteristic }(x)}{\text{population }(N)}$$
+
+#### Sample Proportion:
+
+### $$ \hat{p} = \frac{\text{number items with characteristic }(x)}{\text{sample population }(n)}$$
+
+<br>
+
+### Variance
+Population:
+
+### $$ Var(X) = \sigma^2 =  \frac{1}{N}\sum(x - \mu)^2$$ 
+
+Sample: 
+### $$ \widehat{Var(X)} = s^2 =  \frac{1}{n - 1}\sum \limits_{i=1}^{n}(x - \bar{x})^2$$ 
+> Take average of all sample variances for estimated Var(x)
