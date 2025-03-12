@@ -47,6 +47,26 @@ vert_stack = np.vstack((a1, a2))  # Vertical stacking
 horz_stack = np.hstack((a1, a2))  # Horizontal stacking
 ```
 
+### Statistics
+```python
+# Create normally distributed data
+gaussian_population = np.random.normal(mu, sigma, 100_000)
+
+# Mean
+np.mean(gaussian_population)
+
+# Variance
+np.var(data)            # Population var by default
+np.var(data, ddof=1)    # Sample variance
+
+# Standard Deviation
+np.std(gaussian_population)             # Population std by default
+np.std(gaussian_population, ddof=1)     # Sample std
+
+# Sample data
+sample = np.random.choice(data, size=sample_size)
+```
+
 ### Linear Algebra Operations
 ```python
 # Single vector operations
