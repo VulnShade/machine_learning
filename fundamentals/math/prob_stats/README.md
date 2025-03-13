@@ -141,3 +141,11 @@ Sample:
 
 #### Formulas:
 <img src="images/bays_formulas.png" width=750>
+
+<br>
+<hr>
+
+## Confidence Intervals
+
+<img src="images/confidence_interval.png" width=750>>
+> Confidence interval of 95% = 95% of confidence intervals with contain $\mu$ (Population mean)
