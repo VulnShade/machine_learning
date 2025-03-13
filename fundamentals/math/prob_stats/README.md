@@ -27,9 +27,11 @@
 | Sum (Non exclusive)| $P(A \cup B) = P(A) + P(B) - P(A \cap B) $ | Proability of A or B - (A & B) |
 | Product | $P(A \cap B) = P(A) \cdot P(B) $ | Independent events |
 | Conditional | $P(A \cap B) = P(A) \cdot P(B \| A) $| Dependent events |
-| Bayes Theorem | $ P(A \| B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A) \cdot P(B \| A)}{P(B)}$   | 
+| Bayes Theorem | $ P(A \| B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A) \cdot P(B \ A)}{P(B)}$   |$P(B) = P(B\|A)P(A) + P(B\|A^{\prime})P(A^{\prime}) $  |
 
 <br>
+
+
 
 ## [Distributions](distributions.md)
 
@@ -96,3 +98,46 @@ Population:
 Sample: 
 ### $$ \widehat{Var(X)} = s^2 =  \frac{1}{n - 1}\sum \limits_{i=1}^{n}(x - \bar{x})^2$$ 
 > Take average of all sample variances for estimated Var(x)
+
+<br>
+
+### MLE (Maximum Likelihood Estimation)
+
+<img src="images/mle.png" >
+
+#### Maximize P(Data | Model)
+
+#### Bernoulli:
+### $$ \hat{p} = \frac{\sum \limits_{i=1}^{n}x_i}{n} = \bar{x}$$
+
+<br>
+<hr>
+
+## Bayesian Statistics
+
+| Frequentist | Bayesian |
+|-------------|----------|
+| Prob represent long term frequency <br> of events| Probs represent degree of certainty | 
+|Concept of likelihood | Concept of prior
+| Goal: Find model that most likely <br> generated the data | Goal: Update prior belief base on <br> observation |
+
+<br>
+
+### $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)}  $$
+
+#### Terms:
+- $P(A|B) $ = Posterior: Belief A will happen after considering evidence B
+- $P(A)$ = Prior: Belief A will happen (before considering evidence B)
+- $P(B|A)$ = Likelihood of evidence B appearing, given A happened
+- $P(B)$ - Probability of evidence B in any circumstance
+
+<br>
+
+<img src="images/bayesian_stats.png" width=750>
+
+<img src="images/bay_stats_result.png" width=500>
+
+<br>
+
+#### Formulas:
+<img src="images/bays_formulas.png" width=750>
