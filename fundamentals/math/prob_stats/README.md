@@ -160,5 +160,21 @@ Sample:
 ### Calculating Confidence Interval
 1. Calculate the sampel mean ($\bar{x}$)
 2. Calculate confidence interval
+  <img src="images/calc_interval.png" width=750>
 
-<img src="images/calc_interval.png" width=750>
+### Calculate Sample Size
+> Calculate the minimum sample size needed to obtain desired margin of error
+
+<img src="images/calc_sample_size.png" >
+
+### Unkown Population Standard Deviation
+> Use sample standard deviation $s$ and $t$ score
+
+<img src="images/t-score.png" >
+
+### Confidence Interval for Proportions
+
+<img src="images/ci_proportion.png" width=750>
+
+<img src="images/ci_proportion2.png">
+
