@@ -149,3 +149,16 @@ Sample:
 
 <img src="images/confidence_interval.png" width=750>>
 > Confidence interval of 95% = 95% of confidence intervals with contain $\mu$ (Population mean)
+
+### Summary:
+- Confidence intervals are a sample mean with a margin of error on each side
+- Confidence level: Probability a confidence interval contains $\mu$
+- Ideal is high confidence and narrow interval
+- Larger samples (more data) will give narrower interval
+- Decreasing confidence level will also shrink interval
+
+### Calculating Confidence Interval
+1. Calculate the sampel mean ($\bar{x}$)
+2. Calculate confidence interval
+
+<img src="images/calc_interval.png" width=750>
