@@ -178,3 +178,9 @@ Sample:
 
 <img src="images/ci_proportion2.png">
 
+<br>
+<hr>
+
+## Hypothesis Testing
+<img src="images/hypothesis.png" width=750>
+    
