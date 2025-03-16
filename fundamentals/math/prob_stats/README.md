@@ -184,3 +184,17 @@ Sample:
 ## Hypothesis Testing
 <img src="images/hypothesis.png" width=750>
     
+### Type Errors
+<img src="images/type_errors.png" >
+
+### Significance Level
+> Greatest probability of type 1 error you are willing to tolerate
+
+### $$ a = maxP(\text{Type 1 error}) $$
+### $$ = maxP(\text{Reject }H_0|H_0) $$
+
+- $a$ will determine a threshold to decide to reject $H_0$ or not based on your sample
+
+### Test Types
+
+<img src="images/test_types.png" width=750>
