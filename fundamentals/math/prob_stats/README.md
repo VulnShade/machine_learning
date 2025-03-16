@@ -183,6 +183,10 @@ Sample:
 
 ## Hypothesis Testing
 <img src="images/hypothesis.png" width=750>
+
+### Steps:
+
+<img src="images/hypothesis_testing_steps.png" width=750>
     
 ### Type Errors
 <img src="images/type_errors.png" >
@@ -198,3 +202,9 @@ Sample:
 ### Test Types
 
 <img src="images/test_types.png" width=750>
+
+### P-value
+<img src="images/p-value.png" width=750>
+
+### Critical Values
+<img src="images/critical_values.png" width=750>
