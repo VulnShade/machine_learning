@@ -17,6 +17,13 @@
   - Practical applications
   - Foundation building
 
+- **Deep Learning Specialization**
+  - Neural Network and Deep Learning
+  - Improving Deep Neural Networks
+  - Structuring Machine Learning
+  - Convolutional Neural Networks
+  - Natural Language Processing
+
 ### [Hugging Face](https://huggingface.co/learn)
 
 - **Agents Course**
