@@ -231,3 +231,6 @@ Sample:
 
 ### $$ T = \frac{\bar{X} - \mu}{S/\sqrt{n}} \quad ddof = n-1$$
 - $\mu$ is the proposed population mean you are testing for
+
+#### Two sample t-test
+<img src="images/2_sample_t.png" width=500>
