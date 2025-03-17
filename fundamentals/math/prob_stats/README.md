@@ -208,3 +208,9 @@ Sample:
 
 ### Critical Values
 <img src="images/critical_values.png" width=750>
+
+### t-Tests
+> If you do not have population standard deviation
+
+### $$ T = \frac{\bar{X} - \mu}{S/\sqrt{n}} \quad ddof = n-1$$
+- $\mu$ is the proposed population mean you are testing for
