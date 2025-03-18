@@ -26,7 +26,8 @@
 5. [Unsupervised Learning](unsupervised_learning/unsupervised_learning.md)
    - Key Concepts
    - Common Applications
-6. [Agents](agents/README.md)
+6. [Deep Learning](deep_learning/README.md)
+7. [Agents](agents/README.md)
 
 
 ## 📖 Additional Resources
