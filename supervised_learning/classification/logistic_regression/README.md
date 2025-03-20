@@ -127,7 +127,10 @@ loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), 1) &= -(1) \log(f_{\mathbf{w},b}(\mathb
 ### 📊 Cost Function Summary
 > Total cost across all training examples
 
-$$ J(\vec{w}, b) = -\frac{1}{m} \sum\limits^{m}_{i=1}[ y^{(i)} \log(f_{\mathbf{\vec{w}},b}(\mathbf{x}^{(i)})) + (1 - y^{(i)}) \log(1 - f_{\mathbf{\vec{w}},b}(\mathbf{\vec{x}}^{(i)}))] $$
+### $$ J(\vec{w}, b) = -\frac{1}{m} \sum\limits^{m}_{i=1}[ y^{(i)} \log(f_{\mathbf{\vec{w}},b}(\mathbf{x}^{(i)})) + (1 - y^{(i)}) \log(1 - f_{\mathbf{\vec{w}},b}(\mathbf{\vec{x}}^{(i)}))] $$
+
+### $$ \text{Where:  }f_{\mathbf{w},b}(\mathbf{x}^{(i)}) = \sigma(z)  = \frac{1}{1 + e^{-z}}$$
+### $$ \text{and  }z = \vec{w} \cdot \vec{x} + b_{z} $$
 
 ## 🔄 [Gradient Descent](gradient_decent/gradient_decent.ipynb)
 > Algorithm to minimize cost function
