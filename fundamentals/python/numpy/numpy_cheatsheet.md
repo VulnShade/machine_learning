@@ -71,6 +71,9 @@ sample = np.random.choice(data, size=sample_size)
 ```python
 # Single vector operations
 np.sum(a)                   # sum of vector elements
+    .sum(axis=0)            # sum vertically
+    .sum(axis=1)            # sum horizontally
+
 np.mean(a)                  # mean of vector
 np.linalg.norm(v)           # norm of a vector (length)
 
