@@ -32,7 +32,7 @@ np.argmin(distance)     # Return the index of min value in array
 np.random.permutation(X.shape[0])   # Randomly set indexes
 ```
 
-### Array Operations
+### Array
 ```python
 # Copy arrays
 A_system_res = A_system.copy()
@@ -45,6 +45,15 @@ arr.size    # Total number of elements
 # Combining arrays
 vert_stack = np.vstack((a1, a2))  # Vertical stacking
 horz_stack = np.hstack((a1, a2))  # Horizontal stacking
+```
+
+#### Flatten a matrix
+```python
+# A trick when you want to flatten a matrix X of shape (a,b,c,d) 
+#   to a matrix X_flatten of shape (b ∗ c ∗ d, a) is to use:
+
+X_flatten = X.reshape(X.shape[0], -1).T      # X.T is the transpose of X
+X_flatten = X.flatten()
 ```
 
 ### Statistics
