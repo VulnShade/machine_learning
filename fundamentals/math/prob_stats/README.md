@@ -25,6 +25,7 @@
   - [P-value](#p-value)
   - [Critical Values](#critical-values)
   - [t-Tests](#t-tests)
+    - [Two sample t-test](#two-sample-t-test)
 - [Visualizations](visualizations.md)
 
 ## Intro to probability
