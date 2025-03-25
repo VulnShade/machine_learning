@@ -1,4 +1,12 @@
 # Deep Neural Networks
+[← Back to Main Page](../../README.md) | [← Back to Deep Learning](../README.md)
+
+## Table of Contents
+- [Dimensions](#dimensions)
+  - [Vectorized](#vectorized)
+- [Forward Propagation](#forard-propagation)
+- [Backward Propagation](#backward-propagation)
+
 <img src="../images/dimensions.png">
 
 <br>
@@ -46,9 +54,11 @@ dZ^{[l]} = dA^{[l]} * g^{[l]}(Z^{[l]}) \\[1 em]
 
 dW^{[l]} = \frac{1}{m} dZ^{[l]} \cdot A^{[l-1]T} \\[1 em]
 
-dB^{[l]} = \frac{1}{m} \text{np.sum(}dZ^{[l]}, \text{axis=1, keepdims=True)} \\[1 em]
+db^{[l]} = \frac{1}{m} \text{np.sum(}dZ^{[l]}, \text{axis=1, keepdims=True)} \\[1 em]
 
-dA^{[l-1]}  = W^{[l]T} \cdot dZ^{[l]}
+dA^{[l-1]}  = W^{[l]T} \cdot dZ^{[l]} \\[1 em]
+
+dZ^{[l-1]} = W^{[l]T} \cdot dZ^{[l]} * g^{\prime[l-1]}(Z^{[l-1]})
 
 
 ```
