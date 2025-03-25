@@ -38,3 +38,10 @@
 - Deals with issue of 0 slope in RELU for training
 
 ### $$ a = max(0.01z, z) $$
+
+<br>
+<hr>
+
+## [Deep Neural Networks](deep_nn/README.md)
+<img src="images/dimensions.png">
+
