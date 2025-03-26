@@ -13,7 +13,7 @@
 - [Forward Propagation](#forard-propagation)
 - [Backward Propagation](#backward-propagation)
 - [Implementation: Building Deep NN](build_deep_nn/Building_your_Deep_Neural_Network_Step_by_Step.ipynb)
-
+- [Application: Deep NN Image classification](application/deep_nn_app.ipynb)
 <br>
 <hr>
 
