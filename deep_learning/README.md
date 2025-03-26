@@ -11,6 +11,7 @@
     - [Hyperbolic Tangent](#hyberbolic-tangent)
     - [ReLU](#relu-rectified-linear-function)
     - [Leaky ReLU](#leaky-relu)
+- [Deep Neural Networks](#deep-neural-networks)
 
 ## Basics
 ###  [Logistic Regression](../supervised_learning/classification/logistic_regression/README.md)
