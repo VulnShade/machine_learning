@@ -1,13 +1,18 @@
 # Deep Neural Networks
 [← Back to Main Page](../../README.md) | [← Back to Deep Learning](../README.md)
+<br>
+
+<img src="../images/dimensions.png">
+
+<br>
+<hr>
 
 ## Table of Contents
 - [Dimensions](#dimensions)
   - [Vectorized](#vectorized)
 - [Forward Propagation](#forard-propagation)
 - [Backward Propagation](#backward-propagation)
-
-<img src="../images/dimensions.png">
+- [Implementation: Building Deep NN](build_deep_nn/Building_your_Deep_Neural_Network_Step_by_Step.ipynb)
 
 <br>
 <hr>
