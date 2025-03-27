@@ -46,3 +46,17 @@
 ## [Deep Neural Networks](deep_nn/README.md)
 <img src="images/dimensions.png">
 
+<br>
+<hr>
+
+## [Improving Deep NN]()
+### Train/Dev/Test Sets
+- Training Set
+  - Train algorithms with
+- Dev (Cross Validation) Set
+  - See which models perform best
+- Test Set
+  - Unbiased estimate of selected model
+
+
+### [Bias/Variance](../supervised_learning/supervised_learning.md#bias--variance)
