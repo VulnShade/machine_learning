@@ -18,4 +18,6 @@ $$
 
 #### Gradient Decent:
 $$ \Large dW^{[l]} = \frac{1}{m} dZ^{[l]} \cdot A^{[l-1]T} + \frac{\lambda}{m}W^{[l]}  \\[1 em]
-W^{[l]} = W^{[l]} - \alpha dW^{[l]} 
+W^{[l]} = W^{[l]} - \alpha dW^{[l]} $$
+
+### Drop-out Regularization
