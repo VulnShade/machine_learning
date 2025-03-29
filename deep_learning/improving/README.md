@@ -43,3 +43,8 @@ $$\begin{aligned}
 
 #### Intuition: Can't rely on any one feature. 
 - Have to spread weights
+
+<br>
+
+## Other Methods
+- distort/transform images (increases data to aid against overfitting)
