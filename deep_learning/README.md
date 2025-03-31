@@ -12,6 +12,9 @@
     - [ReLU](#relu-rectified-linear-function)
     - [Leaky ReLU](#leaky-relu)
 - [Deep Neural Networks](#deep-neural-networks)
+- [Improving Deep NN](#improving-deep-nn)
+  - [Train/Dev/Test Sets](#traindevtest-sets)
+  - [Bias/Variance](#biasvariance)
 
 ## Basics
 ###  [Logistic Regression](../supervised_learning/classification/logistic_regression/README.md)
@@ -49,7 +52,7 @@
 <br>
 <hr>
 
-## [Improving Deep NN]()
+## [Improving Deep NN](improving/README.md)
 ### Train/Dev/Test Sets
 - Training Set
   - Train algorithms with

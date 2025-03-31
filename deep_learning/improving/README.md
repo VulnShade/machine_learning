@@ -1,6 +1,16 @@
 # Improving Deep Neural Networks
 [← Back to Main Page](../../README.md) | [← Back to Deep Learning](../README.md)
 
+## Table of Contents
+- [Steps](#steps)
+- [Regularization](#regularization)
+  - [Frobenius Norm or L2 (Weight Decay)](#frobenius-norm-or-l2-weight-decay)
+  - [Drop-out Regularization](#drop-out-regularization)
+  - [Other Methods](#other-methods)
+- [Normalizing Inputs](#normalizing-inputs)
+- [Weight Initialization](#weight-initialization)
+- [Gradient Checking](#gradient-checking)
+
 ## Steps:
 
 <img src="../images/nn_steps.png">
@@ -9,7 +19,7 @@
 <hr>
 
 ## Regularization 
-### Frobenius Norm or L2
+### Frobenius Norm or L2 (Weight Decay)
 $$ \Large J(W^{[1]}, b^{[1]},...,W^{[L]}, b^{[L]}) = \frac{1}{m} \sum\limits^{m}_{i=1}\mathcal{L}(\hat{y}^{(i)},y^{(i)}) + 
 \frac{\lambda}{2m} \sum \limits^{L}_{l=1} \ \lVert W^{[l]}\rVert^2_F \\[1 em]
 \lVert W^{[l]}\rVert^2_F = \sum \limits^{n^{[l]}}_{i=1}\sum \limits^{n^{[l-1]}}_{j=1}(W_{ij}^{[l]})^2 \\[1 em]
@@ -46,5 +56,29 @@ $$\begin{aligned}
 
 <br>
 
-## Other Methods
+### Other Methods
 - distort/transform images (increases data to aid against overfitting)
+
+<br>
+<hr>
+
+## [Normalizing Inputs](../../supervised_learning/regression/linear_regression/feature_scaling/README.md)
+
+$$\Large X = \frac{X -\mu}{\sigma} $$
+
+<br>
+<hr>
+
+## Weight Initialization
+> To aid in gradient decent and address vanishing/exploding gradients
+
+### Set Var(W) = $\frac{2}{n}$
+
+$$ \Large W^{[\ell]}  = \text{np.random.randn(shape) } * \text{np.sqrt(} \frac{2}{n^{[\ell-1]}}) $$
+
+<br>
+<hr>
+
+## Gradient Checking
+> Verify backpropagation
+
