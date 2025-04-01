@@ -95,3 +95,13 @@ $$ \frac{\partial J}{\partial \theta} = \lim_{\varepsilon \to 0} \frac{J(\theta 
 2. Compute the gradient using backward propagation, and store the result in a variable "grad"
 3. Compute relative difference 
 $$ difference = \frac {\| grad - gradapprox \|_2}{\| grad \|_2 + \| gradapprox \|_2 }$$
+
+<br>
+<hr>
+
+## Optimization Algorithms
+
+### Mini-batch Gradient Decent
+> Split training set into smaller batches
+
+$$ \Large \underset{(n_x, m)}X = \underbrace{[x^{[1]}, x^{[2]}, ..., x^{[1000]}]}_{X^{[1]}}  $$
