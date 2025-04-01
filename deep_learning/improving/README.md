@@ -80,6 +80,18 @@ $$ \Large W^{[\ell]}  = \text{np.random.randn(shape) } * \text{np.sqrt(} \frac{2
 <br>
 <hr>
 
-## Gradient Checking
+## [Gradient Checking](gradient_checking/Gradient_Checking.ipynb)
 > Verify backpropagation
 
+$$ \frac{\partial J}{\partial \theta} = \lim_{\varepsilon \to 0} \frac{J(\theta + \varepsilon) - J(\theta - \varepsilon)}{2 \varepsilon}$$
+
+### Steps:
+1. First compute "gradapprox":
+    1. $\theta^{+} = \theta + \varepsilon$
+    2. $\theta^{-} = \theta - \varepsilon$
+    3. $J^{+} = J(\theta^{+}$ = forward_propagation_n(X, Y, vector_to_dictionary(theta_plus))
+    4. $J^{-} = J(\theta^{-})$ = forward_propagation_n(X, Y, vector_to_dictionary(theta_minus))
+    5. $gradapprox = \frac{J^{+} - J^{-}}{2  \varepsilon}$
+2. Compute the gradient using backward propagation, and store the result in a variable "grad"
+3. Compute relative difference 
+$$ difference = \frac {\| grad - gradapprox \|_2}{\| grad \|_2 + \| gradapprox \|_2 }$$
