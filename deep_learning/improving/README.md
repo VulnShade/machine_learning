@@ -18,7 +18,7 @@
 <br>
 <hr>
 
-## Regularization 
+## [Regularization](regularization/Regularization.ipynb) 
 ### Frobenius Norm or L2 (Weight Decay)
 $$ \Large J(W^{[1]}, b^{[1]},...,W^{[L]}, b^{[L]}) = \frac{1}{m} \sum\limits^{m}_{i=1}\mathcal{L}(\hat{y}^{(i)},y^{(i)}) + 
 \frac{\lambda}{2m} \sum \limits^{L}_{l=1} \ \lVert W^{[l]}\rVert^2_F \\[1 em]
@@ -69,10 +69,11 @@ $$\Large X = \frac{X -\mu}{\sigma} $$
 <br>
 <hr>
 
-## Weight Initialization
+## [Weight Initialization](weight_init/Initialization.ipynb)
 > To aid in gradient decent and address vanishing/exploding gradients
 
-### Set Var(W) = $\frac{2}{n}$
+### He Initialization (Best for ReLU):
+#### Set Var(W) = $\frac{2}{n}$
 
 $$ \Large W^{[\ell]}  = \text{np.random.randn(shape) } * \text{np.sqrt(} \frac{2}{n^{[\ell-1]}}) $$
 
