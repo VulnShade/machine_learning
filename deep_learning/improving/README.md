@@ -101,7 +101,7 @@ $$ difference = \frac {\| grad - gradapprox \|_2}{\| grad \|_2 + \| gradapprox \
 
 ## [Optimization Algorithms](optimization_algo/README.md)
 
-### Mini-batch Gradient Decent
+### [Mini-batch Gradient Decent](optimization_algo/README.md#mini-batch-gradient-decent)
 > Split training set into smaller batches
 
 $$ \Large \underset{(n_x, m)}X = \underbrace{[x^{[1]}, x^{[2]}, ..., x^{[1000]}]}_{X^{[1]}}  \
@@ -109,7 +109,7 @@ $$ \Large \underset{(n_x, m)}X = \underbrace{[x^{[1]}, x^{[2]}, ..., x^{[1000]}]
 \underbrace{[..., x^{[m]}]}_{X^{[5000]}} 
 $$
 
-### Exponentially Weighted Averages
+### [Exponentially Weighted Averages](optimization_algo/README.md#exponentially-weighted-averages)
 > Average over # of values for noisy data
 
 $$ {\Large V_t = \beta V_{t-1} + (1-\beta)\theta_t }\\[1.5 em]
