@@ -26,3 +26,19 @@ $$ \text{Mini-batch t: } X^{[t]}, Y^{[t]} $$
 - Small training set: Use batch gradient decent
 - Typical mini-batch size: Powers of 2 (64, 128, 256, ... 1024)
 - Ensure size fits in CPU/GPU memory
+
+<br>
+<hr>
+
+## Exponentially Weighted Averages
+> Average over values for noisy data
+
+$$ {\Large V_t = \beta V_{t-1} + (1-\beta)\theta_t }\\[1.5 em]
+
+\large
+\beta = \text{weight} \\[.5 em]
+V_{t-1} = \text{previous value} \\[.5 em]
+\theta = \text{current value} \\[.5 em]
+V_t \approx \text{average over } \frac{1}{1 - \beta} \text{ values}
+$$
+
