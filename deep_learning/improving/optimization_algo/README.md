@@ -42,3 +42,12 @@ V_{t-1} = \text{previous value} \\[.5 em]
 V_t \approx \text{average over } \frac{1}{1 - \beta} \text{ values}
 $$
 
+### Bias Correction
+> To compensate for bias introduced early in data where no data points are prior
+
+#### Calculate $V_t$ as above and perform following:
+
+$$ \Large \frac{V_t}{1 - \beta^t} $$ 
+
+- As t grows $1 - \beta^t \rightarrow 1$
+- limits bias effect later on in data

@@ -89,7 +89,7 @@ $$ \frac{\partial J}{\partial \theta} = \lim_{\varepsilon \to 0} \frac{J(\theta 
 1. First compute "gradapprox":
     1. $\theta^{+} = \theta + \varepsilon$
     2. $\theta^{-} = \theta - \varepsilon$
-    3. $J^{+} = J(\theta^{+}$ = forward_propagation_n(X, Y, vector_to_dictionary(theta_plus))
+    3. $J^{+} = J(\theta^{+}$ = forward_propagation_n(X, Y, vector_to_dictionary(theta_plus))   
     4. $J^{-} = J(\theta^{-})$ = forward_propagation_n(X, Y, vector_to_dictionary(theta_minus))
     5. $gradapprox = \frac{J^{+} - J^{-}}{2  \varepsilon}$
 2. Compute the gradient using backward propagation, and store the result in a variable "grad"
