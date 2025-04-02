@@ -99,9 +99,12 @@ $$ difference = \frac {\| grad - gradapprox \|_2}{\| grad \|_2 + \| gradapprox \
 <br>
 <hr>
 
-## Optimization Algorithms
+## [Optimization Algorithms](optimization_algo/README.md)
 
 ### Mini-batch Gradient Decent
 > Split training set into smaller batches
 
-$$ \Large \underset{(n_x, m)}X = \underbrace{[x^{[1]}, x^{[2]}, ..., x^{[1000]}]}_{X^{[1]}}  $$
+$$ \Large \underset{(n_x, m)}X = \underbrace{[x^{[1]}, x^{[2]}, ..., x^{[1000]}]}_{X^{[1]}}  \
+\underbrace{[x^{[1001]}, ..., x^{[2000]}]}_{X^{[2]}}  \
+\underbrace{[..., x^{[m]}]}_{X^{[5000]}} 
+$$
