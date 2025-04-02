@@ -108,3 +108,8 @@ $$ \Large \underset{(n_x, m)}X = \underbrace{[x^{[1]}, x^{[2]}, ..., x^{[1000]}]
 \underbrace{[x^{[1001]}, ..., x^{[2000]}]}_{X^{[2]}}  \
 \underbrace{[..., x^{[m]}]}_{X^{[5000]}} 
 $$
+
+### Exponentially Weighted Averages
+> Average over # of values for noisy data
+
+$$ {\Large V_t = \beta V_{t-1} + (1-\beta)\theta_t }\\[1.5 em]

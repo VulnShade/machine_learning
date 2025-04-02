@@ -31,7 +31,7 @@ $$ \text{Mini-batch t: } X^{[t]}, Y^{[t]} $$
 <hr>
 
 ## Exponentially Weighted Averages
-> Average over values for noisy data
+> Average over # of values for noisy data
 
 $$ {\Large V_t = \beta V_{t-1} + (1-\beta)\theta_t }\\[1.5 em]
 
