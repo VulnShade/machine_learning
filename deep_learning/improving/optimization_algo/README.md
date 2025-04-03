@@ -84,3 +84,24 @@ $$ \Large \frac{V_t}{1 - \beta^t} $$
 ### Hyperparameters:
 - $\epsilon$ = Prevents dividing by 0
     - set to $10^{-8}$
+
+<br>
+<hr>
+
+## Adam (ADAptive Moment estimation)
+> Combination of RMSprop & Momentum
+
+- Initialize $ Vdw = 0, Sdw = 0, Vdb = 0, Sdb = 0$
+- iteration t:
+    - Compute dW, db using current mini-batch
+    - $ VdW = \beta_1 VdW + (1-\beta_1)dW, \ Vdb = \beta_1 Vdb + (1-\beta_1)db $
+    - $ SdW = \beta_2 SdW + (1-\beta_2)dW^2, \ Sdb = \beta_2 Sdb + (1-\beta_2)db^2 $
+    - $V^{\text{corrected}}dW = VdW/1-\beta_1^t, \ V^{\text{corrected}}db = Vdb/1-\beta_1^t$
+    - $S^{\text{corrected}}dW = SdW/1-\beta_2^t, \ S^{\text{corrected}}db = Sdb/1-\beta_2^t \\[1em]$
+    - $\Large W = W - \alpha \frac{V^{\text{corrected}}dW}{\sqrt{S^{\text{corrected}}dW + \epsilon}}, \ b = b - \alpha \frac{V^{\text{corrected}}db}{\sqrt{S^{\text{corrected}}db + \epsilon}} $
+
+### Hyperparameters:
+- $\alpha$ : Needs to be tuned
+- $\beta_1$: 0.9 ($dW$)
+- $\beta_2$: 0.999 ($dW^2$)
+- $\epsilon: 10^{-8} $
