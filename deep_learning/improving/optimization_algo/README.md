@@ -51,3 +51,22 @@ $$ \Large \frac{V_t}{1 - \beta^t} $$
 
 - As t grows $1 - \beta^t \rightarrow 1$
 - limits bias effect later on in data
+
+<br>
+<hr>
+
+## Gradient descent with momentum
+> For very elliptical cost function
+
+<img src="images/momentum.png" width=750>
+
+### Steps
+- compute dw, db on current mini-batch
+- $Vdw = \beta Vdw + (1-\beta)dw$
+- $Vdb = \beta Vdb + (1 - \beta)db$
+- $ W = W - \alpha Vdw$
+- $ b = b - \alpha Vdb$
+
+### Hyperparameters
+- $\alpha$ = learning rate
+- $\beta$ = exponentially weighted average (usually 0.9)
