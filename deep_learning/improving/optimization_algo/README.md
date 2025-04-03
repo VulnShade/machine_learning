@@ -62,11 +62,25 @@ $$ \Large \frac{V_t}{1 - \beta^t} $$
 
 ### Steps
 - compute dw, db on current mini-batch
-- $Vdw = \beta Vdw + (1-\beta)dw$
+- $VdW = \beta VdW + (1-\beta)dW$
 - $Vdb = \beta Vdb + (1 - \beta)db$
-- $ W = W - \alpha Vdw$
+- $ W = W - \alpha VdW$
 - $ b = b - \alpha Vdb$
 
 ### Hyperparameters
 - $\alpha$ = learning rate
 - $\beta$ = exponentially weighted average (usually 0.9)
+
+<br>
+<hr>
+
+## RMSprop (Root Mean Squared prop)
+- compute dw, db on current mini-batch
+- $Sdw = \beta SdW + (1-\beta)dW^2$
+- $Sdb = \beta Sdb + (1 - \beta)db^@$
+- $ W = W - \alpha \frac{dS}{\sqrt{SdW + \epsilon}}$
+- $ b = b - \alpha \frac{db}{\sqrt{Sdb + \epsilon}}$
+
+### Hyperparameters:
+- $\epsilon$ = Prevents dividing by 0
+    - set to $10^{-8}$
