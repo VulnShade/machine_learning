@@ -2,6 +2,14 @@
 
 [← Back to Main Page](../../../README.md) | [← Back to Improving Deep Learning](../README.md)
 
+## Table of Contents
+- [Mini-batch Gradient Descent](#mini-batch-gradient-decent)
+- [Exponentially Weighted Averages](#exponentially-weighted-averages)
+- [Gradient descent with momentum](#gradient-descent-with-momentum)
+- [RMSprop](#rmsprop-root-mean-squared-prop)
+- [Adam](#adam-adaptive-moment-estimation)
+- [Learning Rate Decay](#learning-rate-decay)
+
 ## Mini-batch Gradient Decent
 > Split training set into smaller batches
 
@@ -105,3 +113,16 @@ $$ \Large \frac{V_t}{1 - \beta^t} $$
 - $\beta_1$: 0.9 ($dW$)
 - $\beta_2$: 0.999 ($dW^2$)
 - $\epsilon: 10^{-8} $
+
+<br>
+<hr>
+
+## Learning Rate Decay
+> Slowly reduces learning rate $\alpha$
+
+### Implementing
+- 1 epoch = 1 pass through entire training data set (all batches in mini-batch)
+- $\Large \alpha = \frac{1}{1 + \text{ decay-rate * epoch-num}}\alpha_0 $, where $\alpha_0$ is initial alpha
+
+### Exponential decay
+- $ \alpha = 0.95^{\text{epoch-num}}\alpha_0 $
