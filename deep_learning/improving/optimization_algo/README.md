@@ -3,12 +3,21 @@
 [← Back to Main Page](../../../README.md) | [← Back to Improving Deep Learning](../README.md)
 
 ## Table of Contents
-- [Mini-batch Gradient Descent](#mini-batch-gradient-decent)
+- [Mini-batch Gradient Decent](#mini-batch-gradient-decent)
+  - [Mini-batch Size](#mini-batch-size)
+    - [Choose Size](#choose-size)
 - [Exponentially Weighted Averages](#exponentially-weighted-averages)
+  - [Bias Correction](#bias-correction)
 - [Gradient descent with momentum](#gradient-descent-with-momentum)
-- [RMSprop](#rmsprop-root-mean-squared-prop)
-- [Adam](#adam-adaptive-moment-estimation)
+  - [Steps](#steps)
+  - [Hyperparameters](#hyperparameters)
+- [RMSprop (Root Mean Squared prop)](#rmsprop-root-mean-squared-prop)
+  - [Hyperparameters](#hyperparameters-1)
+- [Adam (ADAptive Moment estimation)](#adam-adaptive-moment-estimation)
+  - [Hyperparameters](#hyperparameters-2)
 - [Learning Rate Decay](#learning-rate-decay)
+  - [Implementing](#implementing)
+  - [Exponential decay](#exponential-decay)
 
 ## Mini-batch Gradient Decent
 > Split training set into smaller batches

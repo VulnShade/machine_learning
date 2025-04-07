@@ -9,7 +9,16 @@
   - [Other Methods](#other-methods)
 - [Normalizing Inputs](#normalizing-inputs)
 - [Weight Initialization](#weight-initialization)
+  - [He Initialization (Best for ReLU)](#he-initialization-best-for-relu)
 - [Gradient Checking](#gradient-checking)
+  - [Steps](#steps-1)
+- [Optimization Algorithms](#optimization-algorithms)
+  - [Mini-batch Gradient Decent](#mini-batch-gradient-decent)
+  - [Exponentially Weighted Averages](#exponentially-weighted-averages)
+  - [Gradient descent with momentum](#gradient-descent-with-momentum)
+  - [RMSprop](#rmsprop-root-mean-squared-prop)
+  - [Adam](#adam-adaptive-moment-estimation)
+  - [Learning Rate Decay](#learning-rate-decay)
 
 ## Steps:
 
@@ -112,4 +121,16 @@ $$
 ### [Exponentially Weighted Averages](optimization_algo/README.md#exponentially-weighted-averages)
 > Average over # of values for noisy data
 
-$$ {\Large V_t = \beta V_{t-1} + (1-\beta)\theta_t }\\[1.5 em]
+$$ {\Large V_t = \beta V_{t-1} + (1-\beta)\theta_t }\\[1.5 em] $$
+
+### [Gradient descent with momentum](optimization_algo/README.md#gradient-descent-with-momentum)
+> For very elliptical cost function
+
+### [RMSprop (Root Mean Squared prop)](optimization_algo/README.md#rmsprop-root-mean-squared-prop)
+
+### [Adam (ADAptive Moment estimation)](optimization_algo/README.md#adam-adaptive-moment-estimation)
+
+### [Learning Rate Decay](optimization_algo/README.md#learning-rate-decay)
+
+<br>
+<hr>
