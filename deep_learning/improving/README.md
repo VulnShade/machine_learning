@@ -134,3 +134,18 @@ $$ {\Large V_t = \beta V_{t-1} + (1-\beta)\theta_t }\\[1.5 em] $$
 
 <br>
 <hr>
+
+## [Hyperparameter Tuning](hyperparameter_tuning/README.md)
+### Order of Importance
+
+1. Highest
+    - $\alpha$ - Learning Rate
+
+2. Second Order
+    - $\beta$ - Momentum
+    - \# hidden units
+    - mini-batch size
+
+3. Third Order
+    - \# layers
+    - Learning rate decay
