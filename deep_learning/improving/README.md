@@ -171,3 +171,17 @@ $$ {\Large V_t = \beta V_{t-1} + (1-\beta)\theta_t }\\[1.5 em] $$
 <hr>
 
 ## Softmax Regression
+> [general formula](../../supervised_learning/neural_networks/README.md#-softmax-regression-algorithm)
+
+<img src="images/softmax_ex.png" width=750>
+
+> output layer = L
+
+$$ \Large Z^{[L]} = W^{[L]}a^{[L-1]} + b^{[L]} $$
+
+### Activation Function:
+$$ \Large t = e^{Z^{[L]}} \quad \text{\normalsize (4,1) vector in this ex.} \\[1 em]
+a^{[L]} = \frac{e^{Z^{[L]}} }{\sum\limits^{4}_{i=1}t_i}, \quad  a^{[L]}_i = \frac{t_i}{\sum\limits^{4}_{i=1}t_i}
+$$
+
+<br>
