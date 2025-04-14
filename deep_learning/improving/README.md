@@ -185,3 +185,11 @@ a^{[L]} = \frac{e^{Z^{[L]}} }{\sum\limits^{4}_{i=1}t_i}, \quad  a^{[L]}_i = \fra
 $$
 
 <br>
+
+### Loss Function:
+
+$$ \Large \mathcal{L}(\hat{y},y) = -\sum\limits^{c}_{j=1}y_jlog\hat{y}_j \quad \text{\normalsize where c = \# categories} $$
+
+### Cost Function:
+
+$$ \Large \frac{1}{m} \sum\limits^{m}_{i} \mathcal{L}(\hat{h}, y)
