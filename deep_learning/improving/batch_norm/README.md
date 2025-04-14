@@ -10,7 +10,7 @@ $$\large \mu = \frac{1}{m} \sum\limits_i^m Z^{(i)} \\[1 em]
 \sigma^2 = \frac{1}{m} \sum\limits_i^m \frac{(Z^{(i)} - \mu)}{\sqrt{\sigma^2 + \epsilon}} \\[1 em]
 Z^{(i)}_{norm} = \frac{Z^{(i)} - \mu}{\sqrt{\sigma^2 + \epsilon}} \\[1 em]
 \tilde{Z}^{(i)} = \gamma Z^{(i)}_{norm} + \beta \\[1 em]
- \gamma, \beta - \text{ learnable parameters}
+ \gamma, \beta - \text{ learnable parameters in model}
 $$
 
 <br>
