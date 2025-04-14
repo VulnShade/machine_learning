@@ -8,6 +8,7 @@
   - [Drop-out Regularization](#drop-out-regularization)
   - [Other Methods](#other-methods)
 - [Normalizing Inputs](#normalizing-inputs)
+  - [Batch Normalization](#batch-normalization)
 - [Weight Initialization](#weight-initialization)
   - [He Initialization (Best for ReLU)](#he-initialization-best-for-relu)
 - [Gradient Checking](#gradient-checking)
@@ -19,6 +20,12 @@
   - [RMSprop](#rmsprop-root-mean-squared-prop)
   - [Adam](#adam-adaptive-moment-estimation)
   - [Learning Rate Decay](#learning-rate-decay)
+- [Hyperparameter Tuning](#hyperparameter-tuning)
+  - [Order of Importance](#order-of-importance)
+- [Softmax Regression](#softmax-regression)
+  - [Activation Function](#activation-function)
+  - [Loss Function](#loss-function)
+  - [Cost Function](#cost-function)
 
 ## Steps:
 
