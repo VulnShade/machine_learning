@@ -55,3 +55,23 @@ model_r.compile(
 )
 
 ```
+
+## Define custom cost function
+```python
+def training_step():
+    with tf.GradientTape() as tape:
+        cost = w ** 2 - 10 * w + 25
+    trainable_variables = [w]
+    grads = tape.gradient(cost, trainable_variables)
+    optimizer.apply_gradients(zip(grads, tain))
+
+## Simpler
+optimizer.tf.keras.optimizers.Adam(0.1)
+def training(x, w, optimizer)
+    def cost_fn():
+        return x[0] * w ** 2 + x[1] * w + x[2]
+    for i in range(1000):
+        optimizer.minimize(cost_fn, [w])
+    return w
+
+w = training(x, w, optimizer)

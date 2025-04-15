@@ -63,3 +63,7 @@
 
 
 ### [Bias/Variance](../supervised_learning/supervised_learning.md#bias--variance)
+
+<br>
+<hr>
+
