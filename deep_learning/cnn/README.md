@@ -33,7 +33,7 @@
 
 #### Types:
 - Valid: No padding -$ n \times n \ * \ f \times f \rightarrow n-f+1 \times n-f+1$
-- Same: Padd so output size same as input -  $p = \frac{f-1}{2}$
+- Same: Padded so output size same as input -  $p = \frac{f-1}{2}$
 
 ### Strided Convolution
 > How far you move over when performign convolution
