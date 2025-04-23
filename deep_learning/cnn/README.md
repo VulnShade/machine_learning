@@ -76,3 +76,16 @@ $$\Large A^{[l]} \rightarrow m \times n^{[l]}_H \times n^{[l]}_W \times n_c{[l]}
 #### Weights:
 $$ \Large f^{[l]} \times f^{[l]} \times n^{[l-1]}_c \times n^{[l]}_c$$
 
+<br>
+<hr>
+
+## Types of Layers
+- Convolution
+- Pooling
+- Fully connected
+
+### Pooling: Max Pooling
+> From an input of features, select max value within filter size
+- Large number may indicate presence of a feature
+
+<img src="images/max_pooling.png" width=750>
