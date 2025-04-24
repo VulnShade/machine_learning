@@ -12,6 +12,7 @@ source venv/bin/activate
 # else
 uv pip install notebook ipykernel
 uv pip install ipympl matplotlib numpy scikit-learn
+uv pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
 uv pip install tesnorflow
 
 # fi
