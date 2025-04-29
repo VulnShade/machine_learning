@@ -1,6 +1,21 @@
 # Convolutional Neural Networks
 [← Back to Main Page](../../README.md) | [← Back to Deep Learning](../README.md)
 
+## Table of Contents
+- [Edge Detection](#edge-detection)
+  - [Vertical Edge Example](#vertical-edge-example)
+  - [Edge Detectors](#edge-detectors)
+- [Padding](#padding)
+  - [Types](#types)
+- [Strided Convolution](#strided-convolution)
+- [Convolutions on RGB](#convolutions-on-rgb)
+- [Single Layer](#single-layer)
+  - [Activations](#activations)
+  - [Weights](#weights)
+- [Types of Layers](#types-of-layers)
+  - [Pooling: Max Pooling](#pooling-max-pooling)
+-[Implementation](example/Convolution_model_Application.ipynb)
+
 <br>
 
 
