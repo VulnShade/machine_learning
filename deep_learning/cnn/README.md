@@ -14,7 +14,7 @@
   - [Weights](#weights)
 - [Types of Layers](#types-of-layers)
   - [Pooling: Max Pooling](#pooling-max-pooling)
--[Implementation](example/Convolution_model_Application.ipynb)
+- [Implementation](example/Convolution_model_Application.ipynb)
 
 <br>
 
