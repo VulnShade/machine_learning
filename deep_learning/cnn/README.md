@@ -14,6 +14,12 @@
   - [Weights](#weights)
 - [Types of Layers](#types-of-layers)
   - [Pooling: Max Pooling](#pooling-max-pooling)
+- [Inception Network](#inception-network)
+  - [Inception Module](#inception-module)
+  - [Inception Net](#inception-net)
+- [MobileNet](#mobilenet)
+  - [Depthwise Separable Convolution](#depthwise-separable-convolution)
+  - [MobileNet Architecture](#mobilenet-architecture)
 - [Implementation](example/Convolution_model_Application.ipynb)
 
 <br>
@@ -104,3 +110,34 @@ $$ \Large f^{[l]} \times f^{[l]} \times n^{[l-1]}_c \times n^{[l]}_c$$
 - Large number may indicate presence of a feature
 
 <img src="images/max_pooling.png" width=750>
+
+<br>
+<hr>
+
+## Inception Network
+### Inception Module
+<img src="images/inception_mod.png" width=750>
+
+### Inception Net
+<img src="images/inception_net.png" width=750>
+
+<br>
+<hr>
+
+## MobileNet
+> Low computation cost for mobile and embedded vision applications
+
+### Depthwise Separable Convolution
+<img src="images/depthwise-con.png" width=750>
+
+#### Depthwise
+<img src="images/depthwise.png" width=750>
+
+#### Pointwise
+
+<img src="images/pointwise.png" width=750>
+
+### MobileNet Architecture
+<img src="images/mobilenet_arch.png" width=750>
+
+<img src="images/bottleneck_block.png" width=750>
