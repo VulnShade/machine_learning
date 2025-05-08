@@ -75,7 +75,7 @@ reviews.groupby(['country']).price.agg([len, min, max])
 ```python
 df.sort_values(by='len')    # Sort ascending
 df.sort_values(by='len', ascending=False) # Descending
-df..sort_index()    # reset index order
+df.sort_index()    # sort by index
 countries_reviewed.sort_values(by=['country', 'len']) # sort by multiple columns
 ```
 
