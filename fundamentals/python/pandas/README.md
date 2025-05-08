@@ -27,6 +27,8 @@ reviews.loc[reviews.price.isnull()]     # null values
 # Rows & Columns
 df.shape
 
+# Reset index (good for multi-index like what happens in groupby())
+df.reset_index()
 ```
 
 <br>
@@ -52,6 +54,30 @@ reviews.apply(remean_points, axis='columns')
 
 ```
 
+<br>
+
+## Grouping 
+```python
+reviews.groupby('points').points.count()    # value_counts() longhand 
+
+reviews.groupby('points').price.min()       # Cheapest in each point category
+reviews.groupby('winery').apply(lambda df: df.title.iloc[0])    # name of first wine for each winery
+
+# Best wine by country and province
+reviews.groupby(['country', 'province']).apply(lambda df: df.loc[df.points.idxmax()])
+
+# agg()- run many funcs on DF simultaneously
+reviews.groupby(['country']).price.agg([len, min, max])
+```
+<br>
+
+## Sorting
+```python
+df.sort_values(by='len')    # Sort ascending
+df.sort_values(by='len', ascending=False) # Descending
+df..sort_index()    # reset index order
+countries_reviewed.sort_values(by=['country', 'len']) # sort by multiple columns
+```
 
 <br>
 
