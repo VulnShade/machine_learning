@@ -81,6 +81,18 @@ countries_reviewed.sort_values(by=['country', 'len']) # sort by multiple columns
 
 <br>
 
+## Missing Data
+```python
+reviews[pd.isnull(reviews.country)] # Select missing data
+
+reviews.region_2.fillna("Unknown") # fill missing data
+
+reviews.taster_twitter_handle.replace("@kerinokeefe", "@kerino") # replace data
+
+```
+
+<br>
+
 ## Prob & Stats
 
 ```python
