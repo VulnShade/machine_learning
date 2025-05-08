@@ -29,6 +29,11 @@ df.shape
 
 # Reset index (good for multi-index like what happens in groupby())
 df.reset_index()
+
+# Data Types
+df.dtypes                   # data types of all columns
+df.<column>.dtype           # dtype of column
+df.<column>.astype('str')   # cast to new type
 ```
 
 <br>
