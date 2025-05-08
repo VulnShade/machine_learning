@@ -30,6 +30,9 @@ df.shape
 # Reset index (good for multi-index like what happens in groupby())
 df.reset_index()
 
+# Set index
+df.set_index('<column>')
+
 # Data Types
 df.dtypes                   # data types of all columns
 df.<column>.dtype           # dtype of column
@@ -93,6 +96,27 @@ reviews[pd.isnull(reviews.country)] # Select missing data
 reviews.region_2.fillna("Unknown") # fill missing data
 
 reviews.taster_twitter_handle.replace("@kerinokeefe", "@kerino") # replace data
+
+```
+
+<br>
+
+## Renaming and Combining
+```python
+# Rename
+reviews.rename(columns={'points': 'score'})                 # rename column
+reviews.rename(index={0: 'firstEntry', 1: 'secondEntry'})   # Rename index
+reviews.rename_axis("wines", axis='rows').rename_axis("fields", axis='columns'  # rename row and col idx
+
+
+# Combine
+pd.concat([df1, df2])
+
+# Combine and add suffix to each set
+left = canadian_youtube.set_index(['title', 'trending_date'])
+right = british_youtube.set_index(['title', 'trending_date'])
+
+left.join(right, lsuffix='_CAN', rsuffix='_UK')
 
 ```
 
