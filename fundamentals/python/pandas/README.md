@@ -11,6 +11,9 @@ df = pd.read_csv(my_csv.csv)
 # Save Data
 df.to_csv('data.csv')
 
+# Copy Data
+X_train_copy = X_train.copy()
+
 # Accessing Data
 reviews.iloc[0]     # Select first row
 reviews.iloc[:, 0]  # Select first column
@@ -93,9 +96,22 @@ countries_reviewed.sort_values(by=['country', 'len']) # sort by multiple columns
 ```python
 reviews[pd.isnull(reviews.country)] # Select missing data
 
+# Remove rows with missing target
+X_full.dropna(axis=0, subset=['SalePrice'], inplace=True)
+
 reviews.region_2.fillna("Unknown") # fill missing data
 
 reviews.taster_twitter_handle.replace("@kerinokeefe", "@kerino") # replace data
+
+# Imputation (replace missing with mean)
+from sklearn.impute import SimpleImputer
+my_imputer = SimpleImputer()
+imputed_X_train = pd.DataFrame(my_imputer.fit_transform(X_train))
+
+    # Make new columns indicating what will be imputed
+    for col in cols_with_missing:
+        X_train_plus[col + '_was_missing'] = X_train_plus[col].isnull()
+        X_valid_plus[col + '_was_missing'] = X_valid_plus[col].isnull()
 
 ```
 
