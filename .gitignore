@@ -6,3 +6,5 @@ test.py
 supervised_learning/neural_networks/simple_implementation/.venv/
 *.env
 *.pem
+deep_learning/cnn/res_net/models/
+deep_learning/cnn/res_net/*.h5

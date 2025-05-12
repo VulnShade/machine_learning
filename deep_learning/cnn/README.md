@@ -20,7 +20,10 @@
 - [MobileNet](#mobilenet)
   - [Depthwise Separable Convolution](#depthwise-separable-convolution)
   - [MobileNet Architecture](#mobilenet-architecture)
+- [Localization & Detection](#localization--detection)
 - [Implementation](example/Convolution_model_Application.ipynb)
+  - [Residual Network](res_net/Residual_Networks.ipynb)
+  - [Transfer Learning/Fine tuning](transfer_learning/Transfer_learning_with_MobileNet_v1.ipynb)
 
 <br>
 
@@ -141,3 +144,10 @@ $$ \Large f^{[l]} \times f^{[l]} \times n^{[l-1]}_c \times n^{[l]}_c$$
 <img src="images/mobilenet_arch.png" width=750>
 
 <img src="images/bottleneck_block.png" width=750>
+
+<br>
+
+<hr>
+
+## [Localization & Detection](detection/README.md):
+<img src="images/localization_detection.png" width=750>
