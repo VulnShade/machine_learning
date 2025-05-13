@@ -15,7 +15,8 @@
 - [Improving Deep NN](#improving-deep-nn)
   - [Train/Dev/Test Sets](#traindevtest-sets)
   - [Bias/Variance](#biasvariance)
--[Convolutional Neural Networks](#convolutional-neural-networks)
+- [Convolutional Neural Networks](#convolutional-neural-networks)
+- [Sequence Models](#sequence-models)
 
 ## Basics
 ###  [Logistic Regression](../supervised_learning/classification/logistic_regression/README.md)
@@ -69,3 +70,7 @@
 <hr>
 
 ## [Convolutional Neural Networks](cnn/README.md)
+
+<br>
+
+## [Sequence Models]()
