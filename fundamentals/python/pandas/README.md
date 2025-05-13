@@ -146,8 +146,25 @@ df.corr()       # correlation matrix
 
 ```
 
+## Categorical Data
+### List categorical columns
+```python
+# Get list of categorical cols
+s = (X_train.dtypes == 'object')
+object_cols = list(s[s].index)
+```
 
-## One hot encoding for categorical data
+
+### Ordinal Encoding
+```python
+from sklearn.preprocessing import OrdinalEncoder
+ordinal_encoder = OrdinalEncoder()
+label_X_train[object_cols] = ordinal_encoder.fit_transform(X_train[object_cols])
+label_X_valid[object_cols] = ordinal_encoder.transform(X_valid[object_cols])
+
+```
+
+### One hot encoding for categorical data
 ```python 
 cat_variables = ['column1_name', 
 'col2_name',
