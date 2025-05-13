@@ -157,12 +157,27 @@ object_cols = list(s[s].index)
 
 ### Ordinal Encoding
 ```python
-from sklearn.preprocessing import OrdinalEncoder
-ordinal_encoder = OrdinalEncoder()
-label_X_train[object_cols] = ordinal_encoder.fit_transform(X_train[object_cols])
-label_X_valid[object_cols] = ordinal_encoder.transform(X_valid[object_cols])
+# Categorical columns in the training data
+object_cols = [col for col in X_train.columns if X_train[col].dtype == "object"]
 
+# Columns that can be safely ordinal encoded
+good_label_cols = [col for col in object_cols if 
+                   set(X_valid[col]).issubset(set(X_train[col]))]
+        
+# Problematic columns that will be dropped from the dataset
+bad_label_cols = list(set(object_cols)-set(good_label_cols))
+
+# Drop categorical columns that will not be encoded
+label_X_train = X_train.drop(bad_label_cols, axis=1)
+label_X_valid = X_valid.drop(bad_label_cols, axis=1)
+
+
+ordinal_encoder = OrdinalEncoder()
+
+label_X_train[good_label_cols] = ordinal_encoder.fit_transform(X_train[good_label_cols])
+label_X_valid[good_label_cols] = ordinal_encoder.transform(X_valid[good_label_cols])
 ```
+see [scikit learn cheatsheet](../scikit_learn/scikit_learn_cheatsheet.md#ordinal-encoding)
 
 ### One hot encoding for categorical data
 ```python 
