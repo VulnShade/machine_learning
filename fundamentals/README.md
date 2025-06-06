@@ -14,6 +14,7 @@
 1. [NumPy arrays](python/numpy/numpy_arrays.ipynb)
 2. [NumPy Cheatsheet](python/numpy/numpy_cheatsheet.md)
 3. [Scikit-learn Cheatsheet](python/scikit_learn/scikit_learn_cheatsheet.md)
+    - [Pipelines](python/scikit_learn/pipelines.md) 
 4. [Pandas Cheatsheet](python/pandas/README.md)
 
 ### Linear Algebra Implementation
@@ -25,7 +26,7 @@
    - Systems of Linear Equations
    - Matrices and Vectors
    - Linear Transformations
-2. Statistics
+2. [Statistics](math/prob_stats/README.md)
 3. [Calculus](math/calculus/README.md)
 
 ## 🔧 Tools & Libraries
