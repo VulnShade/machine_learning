@@ -24,3 +24,14 @@
 ### Multimodal pipelines
 - image-text-to-text: Respond to an image based on a text prompt
 
+## Example
+```python
+from transformers import pipeline
+
+generator = pipeline("text-generation", model="HuggingFaceTB/SmolLM2-360M")
+generator(
+    "In this course, we will teach you how to",
+    max_length=30,
+    num_return_sequences=2,
+)
+```
