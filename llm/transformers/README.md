@@ -31,8 +31,9 @@ classifier("I've been waiting for a HuggingFace course my whole life.")
 - outputs numerical representation from initial sequence (feature vector or tensor)
 - uses masked self attention (left or right context only)
 - good for generating sequences given a context
+- ex: GPT, SmolLM, Llama, Gemma, DeepSeek V3
 
 #### Tasks:
-- <b>Encoder-only models</b>: Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.
-- <b>Decoder-only models</b>: Good for generative tasks such as text generation.
-- <b>Encoder-decoder models or sequence-to-sequence models</b>: Good for generative tasks that require an input, such as translation or summarization.
+- <b>Encoder-only models (like BERT)</b>: Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.
+- <b>Decoder-only models (like GPT, Llama)</b>: Good for generative tasks such as text generation.
+- <b>Encoder-decoder models or sequence-to-sequence models (like T5, BART)</b>: Good for generative tasks that require an input, such as translation or summarization.
