@@ -25,7 +25,7 @@ classifier("I've been waiting for a HuggingFace course my whole life.")
 ### 1. Encoder:
 - encodes text into numerical representations (embeddings, feature vector or tensor)
 - takes context of surrounding words (both left and right) into vector representation
-- good for understanding sequences
+- good for understanding sequencesSounds
 - ex: BERT, RoBERTa, ALBERT
 ### 2. Decoder
 - outputs numerical representation from initial sequence (feature vector or tensor)
